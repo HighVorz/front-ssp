@@ -1,0 +1,409 @@
+.terminalStatus_css {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    /*display: flex;*/
+    flex-flow: row nowrap;
+    /*justify-content: center;*/
+    outline: none;
+    /*overflow-y:hidden;*/
+}
+
+/*主体部分*/
+.container-flex {
+    height: 100%;
+    width: 100%;
+}
+
+/*左部*/
+.box-left {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: url(../images/line_img.png) top right repeat-y;
+}
+.box-left>.title-box {
+    width: 85%;
+    height: 2.4rem;
+    background: url(../images/box_title.png) top left no-repeat;
+    background-size: 100% 100%;
+    margin-left: 4%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.title-box>h6{
+    font-size: 14px;
+    color: white;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin-left: 1.4rem;
+}
+
+.title-box .el-cascader {
+    right: -10px;
+    line-height:20px;
+
+}
+.title-box .el-cascader .el-input {
+    width:140px;
+
+}
+
+.title-box .el-cascader .el-input .el-input__inner{
+    background-color:rgb(9, 34, 54) ;
+    border-color:rgb(9,34,54);
+    color:white;
+}
+
+.el-cascader-panel {
+    max-height: 100px;
+    background: rgb(9,34,54);
+}
+
+
+.left-top {
+    width: 95%;
+    height: 95%;
+    background-color: #10121A;
+    position: relative;
+}
+.left-top>.chart-box {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    width: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+.left-top>.chart-box>.left-name {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: aqua;
+}
+.left-top>.chart-box>.left-num {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: gold;
+}
+.left-top>.chart-box>.left-num>.Num{
+    width: 100%;
+    height: 12.5%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    background: #10121A;
+    margin-left: 0px;
+}
+.left-top>.chart-box>.left-name>.txt{
+    width: 100%;
+    height: 12.5%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    background: #10121A;
+    margin-left: 0px;
+}
+
+.left-top>.chart-box>.left-num>.Num h1 {
+    font-size:100%;
+    color : gold;
+}
+.left-top>.chart-box>.left-name>.txt h2 {
+    font-size:100%;
+    color : white;
+}
+
+/*中部(右部)*/
+.box-center {
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+.center-top {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+.center-mid {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.center-bottom {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+/*.center-top>.title-box {*/
+/*    width: 21%;*/
+/*    height: 2.4rem;*/
+/*    background: url(../images/box_title.png) top left no-repeat;*/
+/*    background-size: 100% 100%;*/
+/*    !*margin-left: 4%;*!*/
+/*    display: flex;*/
+/*    flex-flow: row nowrap;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*}*/
+/*.center-top>.center-terminal {*/
+/*    width: 100%;*/
+/*    height: 87%;*/
+/*    background: #10121A;*/
+/*}*/
+
+
+
+
+
+
+.center-top>.center-left {
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+.center-top>.center-left>.center-left-active {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: gold;
+}
+.center-top>.center-left>.center-left-inactive {
+    width: 100%;
+    height: 50%;
+    float: left;
+    background: #10121A;
+}
+
+
+.center-left>.center-left-active table{
+    width: 25%;
+    height: 50%;
+    border-collapse: collapse;
+    position: absolute;
+    text-align: center;
+}
+.center-left>.center-left-active table thead th{
+    color: #61d2f7;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.center-left>.center-left-active table tbody tr{
+    color: #61d2f7;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.center-left>.center-left-inactive table{
+    width: 25%;
+    height: 50%;
+    border-collapse: collapse;
+    position: absolute;
+    text-align: center;
+}
+.center-left>.center-left-inactive table thead th{
+    color: #61d2f7;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.center-left>.center-left-inactive table tbody tr{
+    color: #61d2f7;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.center-top>.center-center {
+    width: 40%;
+    height: 100%;
+    float: left;
+    background: #10121A;
+}
+#terminalLocation {
+    width: 100%;
+    height: 100%;
+    /*background: gold;*/
+}
+
+
+
+.center-top>.center-right {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.center-top>.center-right>.center-right-hosts {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: #10121A;
+}
+#devicesTypes {
+    width: 100%;
+    height: 100%;
+    /*background: gold;*/
+}
+#topHosts {
+    width: 100%;
+    height: 100%;
+    /*background: gold;*/
+}
+
+
+
+.center-mid>.title-box {
+    width: 21%;
+    height: 13%;
+    background: url(../images/box_title.png) top left no-repeat;
+    background-size: 100% 100%;
+    /*margin-left: 4%;*/
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.center-mid>.center-active {
+    width: 100%;
+    height: 87%;
+    background: #10121A;
+}
+
+
+
+
+.center-bottom>.title-box {
+    width: 21%;
+    height: 13%;
+    background: url(../images/box_title.png) top left no-repeat;
+    background-size: 100% 100%;
+    /*margin-left: 4%;*/
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.center-bottom>.timeInterval {
+    width: 40%;
+    height: 25px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+#startTime {
+    float: left;
+    width: 32%;
+}
+#endTime {
+    float: left;
+    width: 32%;
+}
+.center-bottom>.timeInterval input {
+    background: #10121A ;
+}
+/*改变input输入框placeholder颜色*/
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+}
+/*改变input输入框文本颜色*/
+input{color:#fff;}
+/*上行速率变化*/
+#left-active {
+    width: 100%;
+    height: 100%;
+    background: #10121A;
+}
+
+/*下行速率变化*/
+#left-inactive {
+    width: 100%;
+    height: 100%;
+    background: #10121A;
+}
+.terminalFlow{
+    background-color:rgb(9, 34, 54);
+    border-color:rgb(9,34,54);
+    color:white;
+    font-size: 14px;
+    position:absolute;
+    margin:-2px;
+    right:8%;
+    width:30%;
+    height:100%;
+}
+#center-flowTiming-sent {
+    width: 100%;
+    height: 43.5%;
+    float: left;
+    background: #10121A;
+}
+#center-flowTiming-recived {
+    width: 100%;
+    height: 43.5%;
+    float: left;
+    /*background: #10121A;*/
+    background: #10121A;
+}
+/deep/ .el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 100%;
+    height: 100%;
+}
+.timeInterval>.block {
+    padding-left: 1%;
+    height: 100%;
+}
+/deep/ .el-range-separator {
+    text-align: center;
+    display:block;
+}
+
+
+
+
+

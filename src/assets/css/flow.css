@@ -1,0 +1,120 @@
+.flow_css {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    outline: none;
+}
+.box-left {
+    width: 28%;
+    height: 100%;
+    background: url(../images/line_img.png) top right repeat-y;
+}
+
+.left-top {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-top: 0.2rem;
+    position: relative;
+}
+
+.left-bottom {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.left-top {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-top: 0.2rem;
+    position: relative;
+}
+
+.title-box {
+    width: 85%;
+    height: 2.4rem;
+    background: url(../images/box_title.png) top left no-repeat;
+    background-size: 100% 100%;
+    margin-left: 4%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.title-box>h6{
+    font-size: 14px;
+    color: white;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin-left: 1.4rem;
+}
+.chart-box {
+    position: absolute;
+    top: 0.42rem;
+    bottom: 0;
+    width: 95%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+.selectId {
+    background-color:rgb(5,30,50);
+    border-color:rgb(5,30,50);
+    color:white;
+    font-size: 14px;
+    position:absolute;
+    margin:-2px;
+    right:8%;
+    width:70px;
+    z-index: 2;
+}
+
+.box-center {
+    width: 44%;
+    height: 100%;
+}
+
+.center-top {
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+
+.center-bottom {
+    width: 100%;
+    height: 29%;
+    top: 1%;
+    position: relative;
+}
+
+
+.box-right {
+    width: 28%;
+    height: 100%;
+    background: url(../images/line_img.png) top left repeat-y;
+}
+
+.right-top {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-top: 0.2rem;
+    position: relative;
+}
+
+.right-bottom {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-top: 0.2rem;
+    position: relative;
+}
