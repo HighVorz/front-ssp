@@ -1,6 +1,6 @@
 <template>
     <div class="box" @click="changeState" ref="videobox">
-    <!-- 展示12个视频直播源 -->
+    <!-- 展示12个视频直播源,使用了组件 -->
         <div class="leftpart">
             <div class="partone">
                 <video-player></video-player>
