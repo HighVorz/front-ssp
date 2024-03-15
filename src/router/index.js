@@ -2,8 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from "@/components/Home";
 import Flow from "@/components/Flow";
+
+
 import PersonSearchView from '@/views/PersonSearchView'
 import MainView from "@/views/MainView";
+import HomeView from "@/views/Home";
+
 
 import TrafficMonitorView from "@/views/TrafficMonitorView"
 import PeopleDetectionView from "@/views/PeopleDetectionView"
@@ -18,11 +22,12 @@ const routes = [{
 {
     path: '/home',
     name: 'Home',
-    component: Home,
+    component: HomeView,
+
     children: [{
         path: '/home',
-        name: 'MainView',
-        component: MainView
+        name: 'Home',
+        component: HomeView
     }, {
         path: '/monitor',
         name: 'TrafficMonitorView',

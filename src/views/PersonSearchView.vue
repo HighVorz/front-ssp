@@ -8,7 +8,7 @@
           margin: 0 auto;
           margin-top: 10%;
           display: flex;
-          flex-directio: row;
+          flex-direction: row;
           justify-content: flex-start;
         "
       >
@@ -62,7 +62,7 @@
           margin: 0 auto;
           margin-top: 10%;
           display: flex;
-          flex-directio: row;
+          flex-direction: row;
           justify-content: flex-start;
         "
       >

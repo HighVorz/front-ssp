@@ -9,6 +9,8 @@
   "dependencies": {
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "del": "^7.1.0",
+    "echarts": "^5.5.0",
     "element-ui": "^2.4.5",
     "flv.js": "^1.6.2",
     "sass": "^1.71.1",
