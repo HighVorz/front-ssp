@@ -3,11 +3,10 @@ import VueRouter from 'vue-router'
 import Home from "@/components/Home";
 import Flow from "@/components/Flow";
 
-
 import PersonSearchView from '@/views/PersonSearchView'
 import MainView from "@/views/MainView";
 import HomeView from "@/views/Home";
-
+import Navigator from "../views/Navigator.vue";
 
 import TrafficMonitorView from "@/views/TrafficMonitorView"
 import PeopleDetectionView from "@/views/PeopleDetectionView"
@@ -17,19 +16,23 @@ Vue.use(VueRouter)
 
 const routes = [{
     path: "/",
-    redirect: "/home"
+    redirect: "/navigator"
 },
 {
-    path: "/main",
-    component: MainView,
+    path: "/home",
+    component: HomeView,
 },
 {
-    path: '/home',
+    path: "/navigator",
+    component: Navigator,
+},
+{
+    path: '/main',
     name: 'Home',
     component: Home,
 
     children: [{
-        path: '/home',
+        path: '/',
         name: 'Home',
         component: MainView
     }, {
