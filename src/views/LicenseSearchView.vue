@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <diV class="left">
-      <h1>个人信息查询</h1>
+    <div class="left">
+      <h1 style="text-align: center;">个人信息查询</h1>
       <div
         style="
           width: 80%;
@@ -16,11 +16,21 @@
           v-model="input"
           placeholder="请输入内容"
           @keyup.enter.native="Search"
+          style="
+            display: inline-block;
+            width: 88%;"
         ></el-input>
         <el-button
           type="primary"
           icon="el-icon-search"
-          style="margin-left: 20px"
+          style="margin-left: 3%;
+          display: inline-block;
+          width: 9%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-family: '微软雅黑';
+          font-weight: bold"
           @click="Search"
           >搜索
         </el-button>
@@ -68,7 +78,7 @@
         >
         </el-pagination>
       </div>
-    </diV>
+    </div>
   </div>
 </template>
   
@@ -182,7 +192,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  float: left;
   box-shadow: 0 0 1.5vw #1f69b9b9 inset;
   background: linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) left top,
@@ -198,10 +207,8 @@ export default {
 }
 
 .left h1 {
-  position: absolute;
-  color: #fff;
-  left: 47%;
-  top: 25px;
+  color: #FF7F00;
+  font-family: "微软雅黑";
 }
 .right {
   position: relative;

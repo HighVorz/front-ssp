@@ -58,25 +58,25 @@
             type="primary"
             @click="changevideo(1)"
             ref="button1"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车牌直播源1</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(2)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车牌直播源2</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(7)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车载直播源7</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(8)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车载直播源8</el-button
           >
         </div>
@@ -87,25 +87,25 @@
           <el-button
             type="primary"
             @click="changevideo(3)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车牌直播源3</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(4)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车牌直播源4</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(9)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车载直播源9</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(10)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车载直播源10</el-button
           >
         </div>
@@ -116,26 +116,26 @@
           <el-button
             type="primary"
             @click="changevideo(5)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车牌直播源5</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(6)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车牌直播源6</el-button
           >
 
           <el-button
             type="primary"
             @click="changevideo(11)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车载直播源11</el-button
           >
           <el-button
             type="primary"
             @click="changevideo(12)"
-            style="height: 100%; font-size: small"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
             >车载直播源12</el-button
           >
         </div>
