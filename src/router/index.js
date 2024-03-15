@@ -20,14 +20,18 @@ const routes = [{
     redirect: "/home"
 },
 {
+    path: "/main",
+    component: MainView,
+},
+{
     path: '/home',
     name: 'Home',
-    component: HomeView,
+    component: Home,
 
     children: [{
         path: '/home',
         name: 'Home',
-        component: HomeView
+        component: MainView
     }, {
         path: '/monitor',
         name: 'TrafficMonitorView',
