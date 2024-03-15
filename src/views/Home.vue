@@ -16,18 +16,20 @@
                         <span>交通流量</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
-                    <Echarts class="visual_chart" id="main1">
+                    <!-- 🚀 -->
+                    <Chart_main1 class="visual_chart" >
 
-                    </Echarts>
+                    </Chart_main1>
                 </div>
                 <div class="visual_box">
                     <div class="visual_title">
                         <span>交通工具流量</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
-                    <div class="visual_chart" id="main2">
+                    <!-- 🚀 -->
+                    <Chart_main2 class="visual_chart" >
 
-                    </div>
+                    </Chart_main2>
                 </div>
                 <div class="visual_box">
                     <div class="visual_title">
@@ -151,7 +153,8 @@
                         <h1>出行服务+大数据</h1>
                         <h2>山西省交通大数据分析平台</h2>
                     </div>
-                    <div class="visual_chart" id="main8"></div>
+                    <!-- 🚀 -->
+                    <Chart_main8 class="visual_chart" ></Chart_main8>
                     <div class="visual_conBot_bot">
                         <div class="visualSssf_left">
                             <h3>今日实时收费</h3>
@@ -167,9 +170,10 @@
                             <a>长治</a>
                         </div>
                         <div class="visualSssf_right">
-                            <div class="visualSssf_right_box" id="main5"></div>
-                            <div class="visualSssf_right_box" id="main6"></div>
-                            <div class="visualSssf_right_box" id="main7"></div>
+                            <!-- 🚀 -->
+                            <Chart_main5 class="visualSssf_right_box" ></Chart_main5>
+                            <Chart_main6 class="visualSssf_right_box" ></Chart_main6>
+                            <Chart_main7 class="visualSssf_right_box" ></Chart_main7>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -183,8 +187,9 @@
                     </div>
                     <div class="swiper-container visual_swiper1 visual_chart">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" id="main3"></div>
-                            <div class="swiper-slide" id="main31"></div>
+                            <!-- 🚀 -->
+                            <Chart_main3 class="swiper-slide" ></Chart_main3>
+                            <Chart_main31 class="swiper-slide" ></Chart_main31>
                         </div>
                     </div>
                 </div>
@@ -193,9 +198,10 @@
                         <span>收费站收费量</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
-                    <div class="visual_chart" id="main9">
+                    <!-- 🚀 -->
+                    <Chart_main9 class="visual_chart" >
 
-                    </div>
+                    </Chart_main9>
                     <div class="visual_table">
                         <table>
                             <tr>
@@ -233,8 +239,9 @@
                     </div>
                     <div class="swiper-container visual_swiper2 visual_chart">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" id="main4"></div>
-                            <div class="swiper-slide" id="main41"></div>
+                            <!-- 🚀 -->
+                            <Chart_main4 class="swiper-slide" ></Chart_main4>
+                            <Chart_main41 class="swiper-slide" ></Chart_main41>
                         </div>
                     </div>
                 </div>
@@ -257,7 +264,17 @@
 // import * as echarts from 'echarts';
 
 import { ref, onMounted } from 'vue'
-import Echarts from '../components/charts/main1.vue';
+import Chart_main1 from '../components/charts/main1.vue';
+import Chart_main2 from '../components/charts/main2.vue';
+import Chart_main3 from '../components/charts/main3.vue';
+import Chart_main4 from '../components/charts/main4.vue';
+import Chart_main5 from '../components/charts/main5.vue';
+import Chart_main6 from '../components/charts/main6.vue';
+import Chart_main7 from '../components/charts/main7.vue';
+import Chart_main8 from '../components/charts/main8.vue';
+import Chart_main9 from '../components/charts/main9.vue';
+import Chart_main31 from '../components/charts/main31.vue';
+import Chart_main41 from '../components/charts/main41.vue';
 
 const isLoad = ref(true);
 
