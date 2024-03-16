@@ -7,6 +7,7 @@ import PersonSearchView from '@/views/PersonSearchView'
 import MainView from "@/views/MainView";
 import HomeView from "@/views/Home";
 import Navigator from "../views/Navigator.vue";
+import LoginView from "../views/Login.vue";
 
 import TrafficMonitorView from "@/views/TrafficMonitorView"
 import PeopleDetectionView from "@/views/PeopleDetectionView"
@@ -21,6 +22,11 @@ const routes = [{
 {
     path: "/home",
     component: HomeView,
+},
+{
+    path: "/login",
+    component: LoginView,
+
 },
 {
     path: "/navigator",
