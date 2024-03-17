@@ -1,19 +1,22 @@
 <template>
     <div class="container">
+        <div class="title_line">
+            <p>超员检测系统</p>
+        </div>
         <div class="welcome">
             <div :class="form">
                 <div :class="form_signup">
-                    <h1>注册</h1>
+                    <h1><i class="fas fa-user-circle"></i> 注 册</h1>
                     <form autocomplete="off">
                         <input type="text" placeholder="用户名">
-                        <input type="email" placeholder="email">
+                        <input type="email" placeholder="电子邮箱">
                         <input type="password" placeholder="密码">
                         <input type="password" placeholder="确认密码">
                         <button class="button submit">创建账号 </button>
                     </form>
                 </div>
                 <div :class="form_signin">
-                    <h1>登录</h1>
+                    <h1><i class="fas fa-sign-in-alt"></i> 登 录</h1>
                     <form class="more-padding" autocomplete="off">
                         <input type="text" placeholder="用户名">
                         <input type="password" placeholder="密码">

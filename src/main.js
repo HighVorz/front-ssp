@@ -4,6 +4,7 @@ import router from './router'
 import './plugins/element.js'
 import axios from 'axios';
 import echarts from 'echarts'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 Vue.config.productionTip = false
 
