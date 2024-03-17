@@ -272,7 +272,7 @@ function finishLoadAnimation(){
 
 </script>
 
-<style moudle>
+<style moudle src="">
 @import '../assets/css/visual.css';
 @import '../assets/css/swiper.min.css';
 @import '../assets/bootstrap/3.3.4/css/bootstrap.css';

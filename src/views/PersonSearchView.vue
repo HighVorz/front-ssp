@@ -223,7 +223,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .el-pagination.is-background .el-pager li:not(.disabled) {
   background-color: #10121a;
   color: rgb(130, 127, 127);
@@ -241,10 +241,7 @@ export default {
 .el-table__body tbody tr {
   background-color: #10121a;
 }
-</style>
 
-
-<style scoped>
 .container {
   width: 100%;
   height: 100%;

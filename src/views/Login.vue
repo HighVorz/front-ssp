@@ -1,4 +1,5 @@
 <template>
+    <div class="backgd">
     <div class="container">
         <div class="title_line">
             <p>超员检测系统</p>
@@ -43,6 +44,7 @@
             </div>
         </div>
     </div>
+    </div>
 </template>
 
 
@@ -70,6 +72,5 @@ function btn_signup() {
 }
 </script>
 
-<style>
-@import '../assets/css/style.css';
+<style scoped src="../assets/css/style.css">
 </style>

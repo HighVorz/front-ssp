@@ -125,7 +125,7 @@
   </div>
 </template>
     
-    <script>
+<script>
 import request from "../utils/request";
 export default {
   name: "PersonSearchView",
@@ -291,7 +291,7 @@ export default {
 };
 </script>
     
-    <style>
+<style scoped>
 .el-pagination.is-background .el-pager li:not(.disabled) {
   background-color: #10121a;
   color: rgb(130, 127, 127);
