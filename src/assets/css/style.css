@@ -232,8 +232,9 @@ form {
 
 label {
   font-family: "Open Sans", sans-serif;
-  color: #ce7d88;
-  font-size: 0.8em;
+  color: #f7f7f7;
+  font-size: 12px;
+  padding: 0px 0px 0px 12px !important;
   letter-spacing: 1px;
 }
 

@@ -32,9 +32,9 @@
                 <button class="button" id="signin" @click="btn_signin">登录</button>
             </div>
             <div class="rightbox">
-                <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
+                <h2 class="title"><span>OVERCROWD</span>&<br>DETECT</h2>
                 <p class="desc">欢迎来到<span>超员检测系统</span></p>
-                <img class="logo" src="2.jpg" />
+                <img class="logo smaller" src="../assets/images/moniter.png" />
                 <p class="account">还没有账号?</p>
                 <button class="button" id="signup" @click="btn_signup">注册</button>
             </div>
