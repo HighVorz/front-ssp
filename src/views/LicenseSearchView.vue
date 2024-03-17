@@ -6,7 +6,7 @@
         style="
           width: 80%;
           margin: 0 auto;
-          margin-top: 5%;
+          margin-top: 1%;
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
@@ -18,14 +18,15 @@
           @keyup.enter.native="Search"
           style="
             display: inline-block;
+            margin:0px 0px 0px 0px;
             width: 88%;"
         ></el-input>
         <el-button
           type="primary"
           icon="el-icon-search"
-          style="margin-left: 3%;
+          style="margin-left: 2%;
           display: inline-block;
-          width: 9%;
+          width: 10%;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;

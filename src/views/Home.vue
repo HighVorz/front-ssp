@@ -158,16 +158,24 @@
                     <div class="visual_conBot_bot">
                         <div class="visualSssf_left">
                             <h3>今日实时收费</h3>
-                            <a style="display:block">全省数据</a>
-                            <a>大同北</a>
-                            <a>大同南</a>
-                            <a>朔州</a>
-                            <a>吕梁北</a>
-                            <a>吕梁南</a>
-                            <a>太原</a>
-                            <a class="active">晋中</a>
-                            <a>太旧</a>
-                            <a>长治</a>
+                            <a style="display:block;width: 20%;">全市数据</a>
+                            <a>黄埔区</a>
+                            <a>徐汇区</a>
+                            <a>长宁区</a>
+                            <a>静安区</a>
+                            <a>普陀区</a>
+                            <a>虹口区</a>
+                            <a class="active">杨浦区</a>
+                            <a>闵行区</a>
+                            <a>宝山区</a>
+                            <a>嘉定区</a>
+                            <a>金山区</a>
+                            <a>松江区</a>
+                            <a>青浦区</a>
+                            <a>奉贤区</a>
+                            <a>崇明区</a>
+                            <a>奉贤区</a>
+                            <a style="width: 20%;">浦东新区</a>
                         </div>
                         <div class="visualSssf_right">
                             <!-- 🚀 -->
@@ -182,7 +190,7 @@
             <div class="visual_right">
                 <div class="visual_box">
                     <div class="visual_title">
-                        <span>本月发生事件</span>
+                        <span>视频源1</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
                     <div class="swiper-container visual_swiper1 visual_chart">
@@ -195,46 +203,20 @@
                 </div>
                 <div class="visual_box visualSfzsfl">
                     <div class="visual_title">
-                        <span>收费站收费量</span>
+                        <span>视频源2</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
-                    <!-- 🚀 -->
-                    <Chart_main9 class="visual_chart" >
+                    <!-- 🚀 这个不需要-->
+                    <!-- <Chart_main9 class="visual_chart" >
 
-                    </Chart_main9>
-                    <div class="visual_table">
-                        <table>
-                            <tr>
-                                <td>小型车</td>
-                                <td>中型车</td>
-                                <td>大型车</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                        </table>
+                    </Chart_main9> -->
+                    <div class="visual_moniter2">
+                    <!-- 用来放第一个监控画面 -->
                     </div>
                 </div>
                 <div class="visual_box">
                     <div class="visual_title">
-                        <span>收费站收费排行</span>
+                        <span>超车严重情况</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
                     <div class="swiper-container visual_swiper2 visual_chart">
@@ -255,13 +237,13 @@
 <script setup>
 // import '../assets/js/jquery.min.js'
 // import '../assets/js/bootstrap.min.js'
-// import '../assets/js/china.js'
+// import '../assets/js/shanghai.js'
 // import '../assets/js/swiper.min.js'
 // import '../assets/js/visual.js'
 // import '../assets/js/echarts.min.js'
 // import '../assets/js/chartMap.js'
 
-// import * as echarts from 'echarts';
+import * as echarts from 'echarts';
 
 import { ref, onMounted } from 'vue'
 import Chart_main1 from '../components/charts/main1.vue';
