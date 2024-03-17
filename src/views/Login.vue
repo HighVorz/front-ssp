@@ -25,16 +25,16 @@
                 </div>
             </div>
             <div class="leftbox">
-                <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                <p class="desc">选择你最喜欢的<span>鲜花</span></p>
-                <img class="flower smaller" src="1.jpg" alt="1357d638624297b" border="0">
+                <h2 class="title"><span>ELECTRONIC</span>&<br>POLICE</h2>
+                <p class="desc">欢迎注册成为<span>管理员</span></p>
+                <img class="logo" src="../assets/images/login.png" alt="logo" border="0">
                 <p class="account">已经有账号了?</p>
                 <button class="button" id="signin" @click="btn_signin">登录</button>
             </div>
             <div class="rightbox">
                 <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                <p class="desc">选择你最喜欢的<span>鲜花</span></p>
-                <img class="flower" src="2.jpg" />
+                <p class="desc">欢迎来到<span>超员检测系统</span></p>
+                <img class="logo" src="2.jpg" />
                 <p class="account">还没有账号?</p>
                 <button class="button" id="signup" @click="btn_signup">注册</button>
             </div>
