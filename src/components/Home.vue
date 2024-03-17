@@ -1,7 +1,7 @@
 <template>
   <div class="homeWrap">
     <el-container class="home-container">
-      <el-header class="home-header" height="70px">
+      <el-header class="home-header" style="height:70px;">
         <div class="topTitle">
           <div class="left nav">
             <ul style="margin-right: 2%; margin-left: 1%">
@@ -9,31 +9,23 @@
                 <router-link to="/home"><i class="nav_1"></i>首页</router-link>
               </li>
               <li :class="{ nav_active: show == '/securityAssess' }">
-                <router-link to="/monitor"
-                  ><i class="nav_2"></i>视频监控</router-link
-                >
+                <router-link to="/monitor"><i class="nav_2"></i>视频监控</router-link>
               </li>
               <li :class="{ nav_active: show == '/networkTraffic' }">
-                <router-link to="/detection"
-                  ><i class="nav_6"></i>人物检测</router-link
-                >
+                <router-link to="/detection"><i class="nav_6"></i>人物检测</router-link>
               </li>
             </ul>
           </div>
           <div class="center-topTitle">
-            <h1>智能监控系统平台</h1>
+            <h1>超员检测系统平台</h1>
           </div>
           <div class="right nav">
             <ul style="margin-left: 2%">
               <li :class="{ nav_active: show == '/networkTraffic' }">
-                <router-link to="/daiding"
-                  ><i class="nav_6"></i>超载检测</router-link
-                >
+                <router-link to="/daiding"><i class="nav_6"></i>超载检测</router-link>
               </li>
               <li :class="{ nav_active: show == '/terminalStatus' }">
-                <router-link to="/license"
-                  ><i class="nav_4"></i>信息查询</router-link
-                >
+                <router-link to="/license"><i class="nav_4"></i>信息查询</router-link>
               </li>
               <!-- <li :class="{ nav_active: show == '/offTerminal' }">
                 <router-link to="/person"
@@ -70,8 +62,8 @@ export default {
 };
 </script>
 
-<style scoped src="../assets/css/header.css">
-
+<style>
+@import url("../assets/css/header.css");
 .homeWrap {
   position: absolute;
   top: 0;
@@ -79,6 +71,7 @@ export default {
   width: 100%;
   height: 100%;
 }
+
 .home-container {
   height: 100%;
 }

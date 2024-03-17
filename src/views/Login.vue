@@ -1,3 +1,4 @@
+<!-- 基本已经完成，可能要改一些字体 -->
 <template>
     <div class="backgd">
     <div class="container">

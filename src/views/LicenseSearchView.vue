@@ -1,89 +1,49 @@
 <template>
   <div class="container">
     <div class="left">
-      <h1 style="text-align: center;">个人信息查询</h1>
-      <div
-        style="
-          width: 80%;
-          margin: 0 auto;
-          margin-top: 1%;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-        "
-      >
-        <el-input
-          v-model="input"
-          placeholder="请输入内容"
-          @keyup.enter.native="Search"
-          style="
+      <h1><i class="fas fa-search"></i> 个人信息查询</h1>
+      <div class="search_bar">
+        <el-input v-model="input" placeholder="请输入内容" @keyup.enter.native="Search" style="
             display: inline-block;
             margin:0px 0px 0px 0px;
-            width: 88%;"
-        ></el-input>
-        <el-button
-          type="primary"
-          icon="el-icon-search"
-          style="margin-left: 2%;
+            width: 88%;"></el-input>
+        <el-button type="primary" icon="el-icon-search" style="margin-left: 2%;
           display: inline-block;
           width: 10%;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
           font-family: '微软雅黑';
-          font-weight: bold"
-          @click="Search"
-          >搜索
+          font-weight: bold" @click="Search">搜索
         </el-button>
       </div>
       <div style="width: 100%" class="my-table">
         <!-- 表格 -->
-        <el-table
-          :data="tableData"
-          style="margin-left: 10%; margin-top: 2%; width: 80%"
-          :header-cell-style="{
-            color: 'rgb(255,255,255)',
-            fontSize: '16px',
-            backgroundColor: '#10121a',
-          }"
-        >
+        <el-table :data="tableData" style="margin-left: 10%; margin-top: 2%; width: 80%" :header-cell-style="{
+          color: 'rgb(255,255,255)',
+          fontSize: '16px',
+          backgroundColor: '#10121a',
+        }">
           <el-table-column type="index" label="序号" width="80" align="center">
           </el-table-column>
-          <el-table-column
-            prop="name"
-            label="姓名"
-            width="width"
-            align="center"
-          >
+          <el-table-column prop="name" label="姓名" width="width" align="center">
           </el-table-column>
           <el-table-column prop="age" label="年龄" width="width" align="center">
           </el-table-column>
           <el-table-column prop="gender" label="性别" width="80" align="center">
           </el-table-column>
-          <el-table-column
-            prop="living_address"
-            label="住址"
-            width="280"
-            align="center"
-          >
+          <el-table-column prop="living_address" label="住址" width="280" align="center">
           </el-table-column>
         </el-table>
-        <el-pagination
-          class="msg-pagination-container"
-          background
-          :current-page="1"
-          :page-size="10"
-          layout="pager,total"
-          :total="count"
-          style="text-align: center; margin-top: 10px; color: aliceblue"
-        >
+        <el-pagination class="msg-pagination-container" background :current-page="1" :page-size="10"
+          layout="pager,total" :total="count" style="text-align: center; margin-top: 10px; color: aliceblue">
         </el-pagination>
       </div>
     </div>
   </div>
 </template>
-  
-  <script>
+
+<script>
 import request from "../utils/request";
 export default {
   name: "PersonSearchView",
@@ -158,8 +118,18 @@ export default {
   },
 };
 </script>
-  
+
 <style scoped>
+
+.search_bar {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .el-pagination.is-background .el-pager li:not(.disabled) {
   background-color: #10121a;
   color: rgb(255, 255, 255);
@@ -181,11 +151,12 @@ export default {
 .el-table {
   color: #fff;
 }
+
 .container {
   width: 100%;
   height: 100%;
-  /* background-color: red; */
 }
+
 .left {
   position: relative;
   width: 100%;
@@ -205,9 +176,12 @@ export default {
 }
 
 .left h1 {
+  text-align: center;
   color: #FF7F00;
-  font-family: "微软雅黑";
+  font-size:large;
+  font-family: "微软雅黑" format('truetype');
 }
+
 .right {
   position: relative;
   width: 50%;
@@ -232,19 +206,19 @@ export default {
   left: 47%;
   top: 25px;
 }
-.my-table >>> .el-table__row > td {
+
+.my-table>>>.el-table__row>td {
   /* 去除表格线 */
   border: none;
 }
 
-.my-table >>> .el-table th.is-leaf {
+.my-table>>>.el-table th.is-leaf {
   /* 去除上边框 */
   border: none;
 }
 
-.my-table >>> .el-table::before {
+.my-table>>>.el-table::before {
   /* 去除下边框 */
   height: 0;
 }
 </style>
-  

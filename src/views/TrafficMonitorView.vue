@@ -1,3 +1,4 @@
+<!-- 视频监控那个页面，也挺抽象的 -->
 <template>
   <div class="main-box">
     <div class="left-box">
@@ -7,43 +8,26 @@
       </div>
       <!-- 展示实时抓拍的图片 -->
       <div class="left-bottom" style="display: flex">
-        <el-carousel
-          :interval="4000"
-          type="card"
-          v-show="!isShow"
-          height="85%"
-          style="
+        <el-carousel :interval="4000" type="card" v-show="!isShow" height="85%" style="
             height: 100%;
             width: 100%;
             margin-top: 1%;
             margin-left: 1%;
             margin-right: 1%;
-          "
-        >
+          ">
           <el-carousel-item v-for="item in tableData" :key="item.id">
-            <img
-              :src="item.file_url"
-              alt=""
-              width="100%"
-              height="100%"
-              style="object-fit: cover; width: 100%; height: 100%"
-            />
+            <img :src="item.file_url" alt="" width="100%" height="100%"
+              style="object-fit: cover; width: 100%; height: 100%" />
           </el-carousel-item>
         </el-carousel>
 
-        <el-carousel
-          :interval="4000"
-          type="card"
-          v-show="isShow"
-          height="85%"
-          style="
+        <el-carousel :interval="4000" type="card" v-show="isShow" height="85%" style="
             height: 100%;
             width: 100%;
             margin-top: 1%;
             margin-left: 1%;
             margin-right: 1%;
-          "
-        >
+          ">
           <el-carousel-item v-for="item in tableData2" :key="item.id">
             <img :src="item.file_url" alt="" width="100%" height="100%" />
           </el-carousel-item>
@@ -54,186 +38,77 @@
       <!-- 选择直播源 -->
       <div class="right-part1">
         <div class="row1" style="text-align: center; width: 100%; height: 28%">
-          <el-button
-            type="primary"
-            @click="changevideo(1)"
-            ref="button1"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车牌直播源1</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(2)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车牌直播源2</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(7)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车载直播源7</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(8)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车载直播源8</el-button
-          >
+          <el-button type="primary" @click="changevideo(1)" ref="button1"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源1</el-button>
+          <el-button type="primary" @click="changevideo(2)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源2</el-button>
+          <el-button type="primary" @click="changevideo(7)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源7</el-button>
+          <el-button type="primary" @click="changevideo(8)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源8</el-button>
         </div>
-        <div
-          class="row2"
-          style="text-align: center; margin-top: 2%; width: 100%; height: 28%"
-        >
-          <el-button
-            type="primary"
-            @click="changevideo(3)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车牌直播源3</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(4)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车牌直播源4</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(9)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车载直播源9</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(10)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车载直播源10</el-button
-          >
+        <div class="row2" style="text-align: center; margin-top: 2%; width: 100%; height: 28%">
+          <el-button type="primary" @click="changevideo(3)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源3</el-button>
+          <el-button type="primary" @click="changevideo(4)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源4</el-button>
+          <el-button type="primary" @click="changevideo(9)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源9</el-button>
+          <el-button type="primary" @click="changevideo(10)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源10</el-button>
         </div>
-        <div
-          class="row3"
-          style="text-align: center; margin-top: 2%; width: 100%; height: 28%"
-        >
-          <el-button
-            type="primary"
-            @click="changevideo(5)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车牌直播源5</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(6)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车牌直播源6</el-button
-          >
+        <div class="row3" style="text-align: center; margin-top: 2%; width: 100%; height: 28%">
+          <el-button type="primary" @click="changevideo(5)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源5</el-button>
+          <el-button type="primary" @click="changevideo(6)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源6</el-button>
 
-          <el-button
-            type="primary"
-            @click="changevideo(11)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车载直播源11</el-button
-          >
-          <el-button
-            type="primary"
-            @click="changevideo(12)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;"
-            >车载直播源12</el-button
-          >
+          <el-button type="primary" @click="changevideo(11)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源11</el-button>
+          <el-button type="primary" @click="changevideo(12)"
+            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源12</el-button>
         </div>
       </div>
       <!-- el-table展示数据 -->
       <div class="right-part2">
-        <div
-          class="title"
-          style="height: 10%; display: flex; justify-content: center"
-        >
-          <img
-            src="../assets/images/nav_3.png"
-            style="
+        <div class="title" style="height: 10%; display: flex; justify-content: center">
+          <img src="../assets/images/nav_3.png" style="
               margin-right: 2%;
               margin-top: 2.5%;
               width: 50px;
               height: 50px;
-            "
-          />
+            " />
           <h2 style="color: #fff; font-size: calc(100vw * 30 / 1920)">
             实时报警
           </h2>
         </div>
         <div class="my-table" v-show="!isShow">
           <el-table :data="tableData" style="width: 96%; margin-left: 2%">
-            <el-table-column
-              prop="camera_id"
-              label="设备号"
-              width="100"
-              align="center"
-            >
+            <el-table-column prop="camera_id" label="设备号" width="100" align="center">
             </el-table-column>
-            <el-table-column
-              prop="plate_number"
-              label="车牌"
-              width="width"
-              align="center"
-            >
+            <el-table-column prop="plate_number" label="车牌" width="width" align="center">
             </el-table-column>
-            <el-table-column
-              prop="timestamp"
-              label="拍摄时间"
-              width="width"
-              align="center"
-            >
+            <el-table-column prop="timestamp" label="拍摄时间" width="width" align="center">
             </el-table-column>
           </el-table>
-          <el-pagination
-            class="msg-pagination-container"
-            background
-            :current-page="PRquery.page"
-            :page-size="PRquery.size"
-            layout="pager,total"
-            :total="PRquery.count"
-            @current-change="PRhandleCurrentChange"
-            style="text-align: center; margin-top: 10px; color: aliceblue"
-          >
+          <el-pagination class="msg-pagination-container" background :current-page="PRquery.page"
+            :page-size="PRquery.size" layout="pager,total" :total="PRquery.count"
+            @current-change="PRhandleCurrentChange" style="text-align: center; margin-top: 10px; color: aliceblue">
           </el-pagination>
         </div>
         <div class="my-table" v-show="isShow">
-          <el-table
-            :data="tableData2"
-            style="width: 96%; margin-left: 2%"
-            :row-style="{ height: '0' }"
-          >
-            <el-table-column
-              prop="camera_id"
-              label="设备号"
-              width="100"
-              align="center"
-            >
+          <el-table :data="tableData2" style="width: 96%; margin-left: 2%" :row-style="{ height: '0' }">
+            <el-table-column prop="camera_id" label="设备号" width="100" align="center">
             </el-table-column>
 
-            <el-table-column
-              prop="head_number"
-              label="车载人数"
-              width="width"
-              align="center"
-            >
+            <el-table-column prop="head_number" label="车载人数" width="width" align="center">
             </el-table-column>
-            <el-table-column
-              prop="timestamp"
-              label="拍摄时间"
-              width="width"
-              align="center"
-            >
+            <el-table-column prop="timestamp" label="拍摄时间" width="width" align="center">
             </el-table-column>
           </el-table>
-          <el-pagination
-            class="msg-pagination-container"
-            background
-            :current-page="query.page"
-            :page-size="query.size"
-            layout="pager,total"
-            :total="query.count"
-            @current-change="HChandleCurrentChange"
-            style="text-align: center; margin-top: 10px; color: aliceblue"
-          >
+          <el-pagination class="msg-pagination-container" background :current-page="query.page" :page-size="query.size"
+            layout="pager,total" :total="query.count" @current-change="HChandleCurrentChange"
+            style="text-align: center; margin-top: 10px; color: aliceblue">
           </el-pagination>
         </div>
       </div>
@@ -380,6 +255,7 @@ export default {
   background-color: #1d2840;
   border: none;
 }
+
 .el-button--primary:hover {
   color: #ccc;
   background-color: #323140;
@@ -391,6 +267,7 @@ export default {
   background-color: #394665;
   border: none;
 }
+
 .row1 button,
 .row2 button,
 .row3 button {
@@ -487,48 +364,54 @@ video {
   object-fit: fill;
   margin: 1% 1%;
 }
+
 .my-table {
   height: 90%;
 }
+
 .el-table {
   color: #fff;
   font-size: calc(100vw * 18 / 1920);
 }
 
-.my-table >>> .el-table thead {
+.my-table>>>.el-table thead {
   color: #ccc;
 }
 
-.my-table >>> .el-table tr {
+.my-table>>>.el-table tr {
   background: #11141d;
 }
-.my-table >>> .el-table tr:first-child:hover {
+
+.my-table>>>.el-table tr:first-child:hover {
   background: #606266;
   color: #ccc;
 }
-.my-table >>> .el-table tr:hover {
+
+.my-table>>>.el-table tr:hover {
   background: #606266;
   color: #111;
 }
-.my-table >>> .el-table__row > td {
+
+.my-table>>>.el-table__row>td {
   /* 去除表格线 */
   border: none;
 }
 
-.my-table >>> .el-table th.is-leaf {
+.my-table>>>.el-table th.is-leaf {
   /* 去除上边框 */
   border: none;
 }
 
-.my-table >>> .el-table::before {
+.my-table>>>.el-table::before {
   /* 去除下边框 */
   height: 0;
 }
 
-.my-table >>> .el-table th.el-table__cell {
+.my-table>>>.el-table th.el-table__cell {
   background-color: #11141d;
 }
-.my-table >>> .el-table,
+
+.my-table>>>.el-table,
 .el-table__expanded-cell {
   background-color: #11141d;
 }

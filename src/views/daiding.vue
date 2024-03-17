@@ -1,130 +1,65 @@
 <template>
   <div class="container">
     <diV class="left">
-      <h1>超载检测</h1>
-      <div
-        style="
-          width: 80%;
-          margin: 0 auto;
-          margin-top: 5%;
-          display: flex;
-          flex-directio: row;
-          justify-content: flex-start;
-        "
-      >
-        <el-input
-          v-model="input"
-          placeholder="请输入内容"
-          @keyup.enter.native="Search"
-        ></el-input>
-        <el-button
-          type="primary"
-          icon="el-icon-search"
-          style="margin-left: 20px"
-          @click="Search"
-          >搜索
+      <h1><i class="fas fa-tachometer-alt"></i> 超载检测</h1>
+      <div class="search_bar">
+        <el-input v-model="input" placeholder="请输入内容" @keyup.enter.native="Search"style="
+            display: inline-block;
+            margin:0px 0px 0px 0px;
+            width: 88%;"></el-input>
+        <el-button type="primary" icon="el-icon-search" style="margin-left: 2%;
+          display: inline-block;
+          width: 10%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-family: '微软雅黑';
+          font-weight: bold" @click="Search">搜索
         </el-button>
       </div>
       <div style="width: 100%" class="my-table">
         <!-- 表格 -->
-        <el-table
-          :data="tableData"
-          :row-class-name="tableRowClassName"
-          style="margin-left: 10%; margin-top: 2%; width: 80%"
-          :header-cell-style="{
-            color: 'rgb(130, 127, 127)',
-            fontSize: '16px',
-            backgroundColor: '#10121a',
-          }"
-        >
+        <el-table :data="tableData" :row-class-name="tableRowClassName"
+          style="margin-left: 10%; margin-top: 2%; width: 80%" :header-cell-style="{
+          color: 'rgb(130, 127, 127)',
+          fontSize: '16px',
+          backgroundColor: '#10121a',
+        }">
           <el-table-column type="index" label="序号" width="80" align="center">
           </el-table-column>
-          <el-table-column
-            prop="camera_id"
-            label="摄像头名"
-            width="width"
-            align="center"
-          >
+          <el-table-column prop="camera_id" label="摄像头名" width="width" align="center">
           </el-table-column>
-          <el-table-column
-            prop="plate_number"
-            label="车牌号"
-            width="width"
-            align="center"
-          >
+          <el-table-column prop="plate_number" label="车牌号" width="width" align="center">
             <template slot-scope="scope">
-              <span
-                class="message-title"
-                @click="checkPlatePicture(scope.row)"
-                >{{ scope.row.plate_number }}</span
-              >
-              <el-image-viewer
-                v-if="showViewer"
-                :on-close="closeViewer"
-                :url-list="imgList"
-              />
+              <span class="message-title" @click="checkPlatePicture(scope.row)">{{ scope.row.plate_number }}</span>
+              <el-image-viewer v-if="showViewer" :on-close="closeViewer" :url-list="imgList" />
             </template>
           </el-table-column>
-          <el-table-column
-            prop="vehicle_type"
-            label="车辆类型"
-            width="width"
-            align="center"
-          >
+          <el-table-column prop="vehicle_type" label="车辆类型" width="width" align="center">
           </el-table-column>
-          <el-table-column
-            prop="head_number"
-            label="装载人数"
-            width="width"
-            align="center"
-          >
+          <el-table-column prop="head_number" label="装载人数" width="width" align="center">
             <template slot-scope="scope">
-              <span
-                class="message-title"
-                @click="checkHeadPicture(scope.row)"
-                >{{ scope.row.head_number }}</span
-              >
-              <el-image-viewer
-                v-if="showViewer2"
-                :on-close="closeViewer2"
-                :url-list="imgList2"
-              />
+              <span class="message-title" @click="checkHeadPicture(scope.row)">{{ scope.row.head_number }}</span>
+              <el-image-viewer v-if="showViewer2" :on-close="closeViewer2" :url-list="imgList2" />
             </template>
           </el-table-column>
-          <el-table-column
-            prop="max_passenger"
-            label="最大乘客数"
-            width="width"
-            align="center"
-          >
+          <el-table-column prop="max_passenger" label="最大乘客数" width="width" align="center">
           </el-table-column>
-          <el-table-column
-            prop="timestamp"
-            label="时间戳"
-            width="220"
-            align="center"
-          >
+          <el-table-column prop="timestamp" label="时间戳" width="220" align="center">
             <template slot-scope="scope">
               <span> {{ (scope.row.timestamp * 1000) | formatDate }} </span>
             </template>
           </el-table-column>
         </el-table>
 
-        <el-pagination
-          class="msg-pagination-container"
-          background
-          :current-page="1"
-          :page-size="10"
-          layout="pager,total"
-          :total="count"
-          style="text-align: center; margin-top: 10px; color: aliceblue"
-        >
+        <el-pagination class="msg-pagination-container" background :current-page="1" :page-size="10"
+          layout="pager,total" :total="count" style="text-align: center; margin-top: 10px; color: aliceblue">
         </el-pagination>
       </div>
     </diV>
   </div>
 </template>
-    
+
 <script>
 import request from "../utils/request";
 export default {
@@ -290,8 +225,17 @@ export default {
   },
 };
 </script>
-    
+
 <style scoped>
+.search_bar {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .el-pagination.is-background .el-pager li:not(.disabled) {
   background-color: #10121a;
   color: rgb(130, 127, 127);
@@ -305,17 +249,17 @@ export default {
 .el-pagination.is-background .el-pager li:not(.disabled):hover {
   color: #fff !important;
 }
-.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+
+.el-table--enable-row-hover .el-table__body tr:hover>td.el-table__cell {
   color: #10121a !important;
 }
+
 .el-table__body tbody tr {
   background-color: #10121a;
 }
-</style>
-    
-    
-    <style scoped>
-/deep/ .el-table .warning-row {
+
+/* /deep/  */
+.el-table .warning-row {
   color: #f51f1f !important;
   /* background-color: #fff; */
 }
@@ -323,14 +267,16 @@ export default {
 .message-title {
   cursor: pointer;
 }
+
 .el-table {
   color: #fff;
 }
+
 .container {
   width: 100%;
   height: 100%;
-  /* background-color: red; */
 }
+
 .left {
   position: relative;
   width: 100%;
@@ -351,24 +297,24 @@ export default {
 }
 
 .left h1 {
-  position: absolute;
-  color: #fff;
-  left: 47%;
-  top: 25px;
+  text-align: center;
+  color: #FF7F00;
+  font-size: large;
+  font-family: "微软雅黑" format('truetype');
 }
-.my-table >>> .el-table__row > td {
+
+.my-table>>>.el-table__row>td {
   /* 去除表格线 */
   border: none;
 }
 
-.my-table >>> .el-table th.is-leaf {
+.my-table>>>.el-table th.is-leaf {
   /* 去除上边框 */
   border: none;
 }
 
-.my-table >>> .el-table::before {
+.my-table>>>.el-table::before {
   /* 去除下边框 */
   height: 0;
 }
 </style>
-    
