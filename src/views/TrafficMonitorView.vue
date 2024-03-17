@@ -71,7 +71,7 @@
       </div>
       <!-- el-table展示数据 -->
       <div class="right-part2">
-        <div class="title" style="height: 10%; display: flex; justify-content: center">
+        <div class="title" style="height: 15%; display: flex; justify-content: center">
           <img src="../assets/images/nav_3.png" style="
               margin-right: 2%;
               margin-top: 2.5%;
@@ -327,7 +327,7 @@ export default {
 
 .right-part1 {
   width: 100%;
-  height: 25%;
+  height: 35%;
   box-shadow: 0 0 1.5vw #1f69b9b9 inset;
   background: linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) left top,
@@ -343,7 +343,7 @@ export default {
 
 .right-part2 {
   width: 100%;
-  height: 75%;
+  height: 65%;
   margin-top: 1%;
   box-shadow: 0 0 1.5vw #1f69b9b9 inset;
   background: linear-gradient(#33cdfa, #33cdfa) left top,
