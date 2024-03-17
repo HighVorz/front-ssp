@@ -235,15 +235,15 @@
 </template>
 
 <script setup>
-// import '../assets/js/jquery.min.js'
+import '../assets/js/jquery.min.js'
 // import '../assets/js/bootstrap.min.js'
-// import '../assets/js/shanghai.js'
-// import '../assets/js/swiper.min.js'
+import '../assets/js/shanghai.js'
+import '../assets/js/swiper.min.js'
 // import '../assets/js/visual.js'
 // import '../assets/js/echarts.min.js'
 // import '../assets/js/chartMap.js'
 
-import * as echarts from 'echarts';
+// import * as echarts from 'echarts';
 
 import { ref, onMounted } from 'vue'
 import Chart_main1 from '../components/charts/main1.vue';
@@ -254,7 +254,7 @@ import Chart_main5 from '../components/charts/main5.vue';
 import Chart_main6 from '../components/charts/main6.vue';
 import Chart_main7 from '../components/charts/main7.vue';
 import Chart_main8 from '../components/charts/main8.vue';
-import Chart_main9 from '../components/charts/main9.vue';
+// import Chart_main9 from '../components/charts/main9.vue';
 import Chart_main31 from '../components/charts/main31.vue';
 import Chart_main41 from '../components/charts/main41.vue';
 

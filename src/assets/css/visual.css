@@ -129,7 +129,7 @@ html, body, form{overflow-y:auto;height:100%;}
 
 .visualSfzsfl{position:relative;}
 .visualSfzsfl .visual_chart{opacity:0.6}
-.visualSfzsfl .visual_moniter2{width:60%;position:absolute;z-index: 99;top:40px;left:0;}
+.visualSfzsfl .visual_moniter2{position:absolute;z-index: 99;top:40px;left:0;}
 
 
 
