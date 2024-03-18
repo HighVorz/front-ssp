@@ -36,7 +36,7 @@ export default {
         },
     },
     mounted() {
-        this.play('http://115.25.46.178:90/live?port=1935&app=live&stream=10240');
+        // this.play('http://115.25.46.178:90/live?port=1935&app=live&stream=10240');  
     }
 };
 

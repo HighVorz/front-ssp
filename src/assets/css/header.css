@@ -52,8 +52,8 @@
   }
 
 .nav>ul>li i{
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     position: relative;
     margin-right: 5px;
@@ -63,11 +63,10 @@
     opacity: 0.9;
     /*display: inline-block;*/
     /*padding: 0 15px 0 5px;*/
-    font-family: "黑体";
+    font-family: "微软雅黑";
     font-size: 16px;
     position: absolute;
-    top:4px;
-    bottom: 4px;
+    top:0px;
     right:4px;
     left:4px;
     text-decoration: none;
@@ -82,49 +81,36 @@
     float: right;
 
 }
-.li_ul{
-    position: absolute;
-    top:2%;
-    background-color: #030829;
-    /*border-top:4px solid #4b8df8;*/
-    display: none;
-    z-index: 999;
-
-}
-.li_ul li{
-    line-height: 10px !important;
-    font-size: 16px;
-    position:absolute;
-    top:4px;
-    bottom: 4px;
-}
-.li_ul li:hover{
-    background-color: #4b8df8;
-}
-.li_ul li a{
-    color: #ffffff;
-    font-size: 16px;
-    text-decoration: none;
-
-}
 
 .nav_1{
-    background-image: url("../images/data_icon.png");
+    background-image: url("../images/header_icon/首页.png");
+    width: 25px;
+    height: 25px;
 }
 .nav_2{
-    background-image: url("../images/select_icon.png");
+    background-image: url("../images/header_icon/视频监控.png");
+    width: 25px;
+    height: 25px;
 }
 .nav_3{
-    background-image: url("../images/nav_3.png");
+    background-image: url("../images/header_icon/人物检测.png");
+    width: 25px;
+    height: 25px;
 }
 .nav_4{
-    background-image: url("../images/nav_4.png");
+    background-image: url("../images/header_icon/超载检测.png");
+    width: 25px;
+    height: 25px;
 }
 .nav_5{
-    background-image: url("../images/nav_5.png");
+    background-image: url("../images/header_icon/信息查询.png");
+    width: 25px;
+    height: 25px;
 }
 .nav_6{
-    background-image: url("../images/nav_6.png");
+    background-image: url("../images/header_icon/退出.png");
+    width: 25px;
+    height: 25px;
 }
 
 .nav_active{

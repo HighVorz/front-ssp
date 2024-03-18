@@ -1,10 +1,10 @@
 <template>
   <div class="homeWrap">
     <el-container class="home-container">
-      <el-header class="home-header" style="height:70px;">
+      <el-header class="home-header" style="height:9%;">
         <div class="topTitle">
           <div class="left nav">
-            <ul style="margin-right: 2%; margin-left: 1%">
+            <ul style="margin:0.35% 2% 0 1%;">
               <li :class="{ nav_active: show == '/flow' }">
                 <router-link to="/home"><i class="nav_1"></i>首页</router-link>
               </li>
@@ -12,7 +12,7 @@
                 <router-link to="/monitor"><i class="nav_2"></i>视频监控</router-link>
               </li>
               <li :class="{ nav_active: show == '/networkTraffic' }">
-                <router-link to="/detection"><i class="nav_6"></i>人物检测</router-link>
+                <router-link to="/detection"><i class="nav_3"></i>人物检测</router-link>
               </li>
             </ul>
           </div>
@@ -20,16 +20,16 @@
             <h1>超员检测系统平台</h1>
           </div>
           <div class="right nav">
-            <ul style="margin-left: 2%">
+            <ul style="margin:0.35% 2% 0 1%;">
               <li :class="{ nav_active: show == '/networkTraffic' }">
-                <router-link to="/daiding"><i class="nav_6"></i>超载检测</router-link>
+                <router-link to="/daiding"><i class="nav_4"></i>超载检测</router-link>
               </li>
               <li :class="{ nav_active: show == '/terminalStatus' }">
-                <router-link to="/license"><i class="nav_4"></i>信息查询</router-link>
+                <router-link to="/license"><i class="nav_5"></i>信息查询</router-link>
               </li>
               <!-- 这个暂时先加上的，具体导航是抄上面的 -->
               <li :class="{ nav_active: show == '/terminalStatus' }">
-                <router-link to="/license"><i class="nav_4"></i>退出</router-link>
+                <router-link to="/license"><i class="nav_6"></i>退出</router-link>
               </li>
               <!-- <li :class="{ nav_active: show == '/offTerminal' }">
                 <router-link to="/person"
