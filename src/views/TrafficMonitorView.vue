@@ -51,8 +51,8 @@
           <el-button type="primary" @click="changevideo(10)">车载直播源10</el-button>
         </div>
         <div class="row3">
-          <el-button type="primary" @click="changevideo(5)">车牌直播源5</el-button>
-          <el-button type="primary" @click="changevideo(6)">车牌直播源6</el-button>
+          <el-button type="primary" @click="changevideo(5)">车牌直播源05</el-button>
+          <el-button type="primary" @click="changevideo(6)">车牌直播源06</el-button>
           <el-button type="primary" @click="changevideo(11)">车载直播源11</el-button>
           <el-button type="primary" @click="changevideo(12)">车载直播源12</el-button>
         </div>
@@ -274,6 +274,7 @@ export default {
 .row3>.el-button--primary {
   font-size: calc(100vw * 18 / 2260);
   height: 100%;
+  font-weight: bold;
   text-align: center;
   padding: 5px 5px 5px 5px;
 }

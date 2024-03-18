@@ -32,14 +32,25 @@
 
 .nav>ul>li:hover{
 
-    box-shadow: -10px 0px 15px #034c6a inset, /*å·¦è¾¹é˜´å½± */
-    0px -10px 15px #034c6a inset, /*ä¸Šè¾¹é˜´å½±*/
-    10px 0px 15px #034c6a inset, /*å³è¾¹é˜´å½±*/
-    0px 10px 15px #034c6a inset;
+    animation: breathe 2s infinite;
+    /* box-shadow: -10px 0px 15px #034c6a inset,
+    0px -10px 15px #034c6a inset,
+    10px 0px 15px #034c6a inset,
+    0px 10px 15px #034c6a inset; */
     border-bottom: solid #4b8df8;
     box-sizing: border-box;
-
 }
+
+/* 呼吸效果阴影框 */
+@keyframes breathe {
+    0%, 100% {
+      box-shadow: 0 0 2vw #034c6a inset;
+    }
+    50% {
+      box-shadow: 0 0 4vw #034c6a inset;
+    }
+  }
+
 .nav>ul>li i{
     width: 16px;
     height: 16px;

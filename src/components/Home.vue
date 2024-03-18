@@ -27,6 +27,10 @@
               <li :class="{ nav_active: show == '/terminalStatus' }">
                 <router-link to="/license"><i class="nav_4"></i>信息查询</router-link>
               </li>
+              <!-- 这个暂时先加上的，具体导航是抄上面的 -->
+              <li :class="{ nav_active: show == '/terminalStatus' }">
+                <router-link to="/license"><i class="nav_4"></i>退出</router-link>
+              </li>
               <!-- <li :class="{ nav_active: show == '/offTerminal' }">
                 <router-link to="/person"
                   ><i class="nav_5"></i>数据查询</router-link
@@ -64,6 +68,7 @@ export default {
 
 <style>
 @import url("../assets/css/header.css");
+
 .homeWrap {
   position: absolute;
   top: 0;
@@ -81,7 +86,11 @@ export default {
 }
 
 .home-main {
-  background-color: #10121a;
+  background-image: url("~@/assets/images/asfunctionbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* background-color: #10121a; */
   height: 80%;
 }
 </style>
