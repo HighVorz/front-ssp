@@ -8,6 +8,7 @@
       </div>
       <!-- 展示实时抓拍的图片 -->
       <div class="left-bottom" style="display: flex">
+        <!-- 以下没有具体内容 -->
         <el-carousel :interval="4000" type="card" v-show="!isShow" height="85%" style="
             height: 100%;
             width: 100%;
@@ -37,36 +38,23 @@
     <div class="right-box">
       <!-- 选择直播源 -->
       <div class="right-part1">
-        <div class="row1" style="text-align: center; width: 100%; height: 28%">
-          <el-button type="primary" @click="changevideo(1)" ref="button1"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源1</el-button>
-          <el-button type="primary" @click="changevideo(2)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源2</el-button>
-          <el-button type="primary" @click="changevideo(7)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源7</el-button>
-          <el-button type="primary" @click="changevideo(8)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源8</el-button>
+        <div class="row1">
+          <el-button type="primary" @click="changevideo(1)" ref="button1">车牌直播源1</el-button>
+          <el-button type="primary" @click="changevideo(2)">车牌直播源02</el-button>
+          <el-button type="primary" @click="changevideo(7)">车载直播源07</el-button>
+          <el-button type="primary" @click="changevideo(8)">车载直播源08</el-button>
         </div>
-        <div class="row2" style="text-align: center; margin-top: 2%; width: 100%; height: 28%">
-          <el-button type="primary" @click="changevideo(3)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源3</el-button>
-          <el-button type="primary" @click="changevideo(4)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源4</el-button>
-          <el-button type="primary" @click="changevideo(9)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源9</el-button>
-          <el-button type="primary" @click="changevideo(10)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源10</el-button>
+        <div class="row2">
+          <el-button type="primary" @click="changevideo(3)">车牌直播源03</el-button>
+          <el-button type="primary" @click="changevideo(4)">车牌直播源04</el-button>
+          <el-button type="primary" @click="changevideo(9)">车载直播源09</el-button>
+          <el-button type="primary" @click="changevideo(10)">车载直播源10</el-button>
         </div>
-        <div class="row3" style="text-align: center; margin-top: 2%; width: 100%; height: 28%">
-          <el-button type="primary" @click="changevideo(5)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源5</el-button>
-          <el-button type="primary" @click="changevideo(6)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车牌直播源6</el-button>
-
-          <el-button type="primary" @click="changevideo(11)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源11</el-button>
-          <el-button type="primary" @click="changevideo(12)"
-            style="height: 100%; font-size: small;padding:5px 5px 5px 5px;">车载直播源12</el-button>
+        <div class="row3">
+          <el-button type="primary" @click="changevideo(5)">车牌直播源5</el-button>
+          <el-button type="primary" @click="changevideo(6)">车牌直播源6</el-button>
+          <el-button type="primary" @click="changevideo(11)">车载直播源11</el-button>
+          <el-button type="primary" @click="changevideo(12)">车载直播源12</el-button>
         </div>
       </div>
       <!-- el-table展示数据 -->
@@ -268,10 +256,26 @@ export default {
   border: none;
 }
 
-.row1 button,
-.row2 button,
-.row3 button {
-  font-size: calc(100vw * 18 / 1920);
+.right-part1 {
+  padding-top: 0.01%;
+}
+
+.row1,
+.row2,
+.row3 {
+  margin-top: 2%;
+  text-align: center;
+  width: 100%;
+  height: 28%;
+}
+
+.row1>.el-button--primary,
+.row2>.el-button--primary,
+.row3>.el-button--primary {
+  font-size: calc(100vw * 18 / 2260);
+  height: 100%;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
 }
 
 .main-box {
@@ -295,7 +299,8 @@ export default {
   width: 100%;
   height: 64%;
   /* background-color: rebeccapurple; */
-  box-shadow: 0 0 1.5vw #1f69b9b9 inset;
+  animation: breathe 2s infinite;
+  /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) right top,
@@ -312,7 +317,8 @@ export default {
   margin-top: 1%;
   width: 100%;
   height: 35%;
-  box-shadow: 0 0 1.5vw #1f69b9b9 inset;
+  animation: breathe 2s infinite;
+  /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) right top,
@@ -325,10 +331,21 @@ export default {
   background-size: 0.1vw 1.5vw, 1.5vw 0.1vw;
 }
 
+/* 呼吸效果阴影框 */
+@keyframes breathe {
+  0%, 100% {
+    box-shadow: 0 0 1vw #1f69b9b9 inset;
+  }
+  50% {
+    box-shadow: 0 0 3vw #1f69b9b9 inset;
+  }
+}
+
 .right-part1 {
   width: 100%;
   height: 35%;
-  box-shadow: 0 0 1.5vw #1f69b9b9 inset;
+  animation: breathe 2s infinite;
+  /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) right top,
@@ -345,7 +362,8 @@ export default {
   width: 100%;
   height: 65%;
   margin-top: 1%;
-  box-shadow: 0 0 1.5vw #1f69b9b9 inset;
+  animation: breathe 2s infinite;
+  /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) right top,
