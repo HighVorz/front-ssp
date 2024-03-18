@@ -1,6 +1,6 @@
 <template>
     <div class="Echarts">
-        <div id="main3" style="width: 300px;height:200px;"></div>
+        <div id="main3" style="width: 350px;height:180px;"></div>
     </div>
 </template>
 
@@ -8,8 +8,6 @@
 
 import * as echarts from 'echarts';
 import { ref, onMounted } from 'vue';
-
-
 
 
 function myEcharts() {
