@@ -1,6 +1,6 @@
 <template>
     <div class="Echarts">
-        <div id="main5" style="width: 300px;height:200px;"></div>
+        <div id="main5" style="width: 125px;height:200px;"></div>
     </div>
 </template>
 
@@ -18,7 +18,7 @@ function myEcharts() {
 
     var shadowColor = '#374b86';
     var value = 80;
-    option5 = {
+    const option5 = {
 
         title: {
             //text: `${value}万辆`,
@@ -106,7 +106,7 @@ function myEcharts() {
                 }
             }]
         }]
-    }
+    };
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option5);
 }
