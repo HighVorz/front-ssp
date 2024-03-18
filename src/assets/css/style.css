@@ -93,6 +93,7 @@
 
 
 input {
+  font-family: "MyCustomFont2", sans-serif;
   background: #208bbd;
   background: transparent;
   width: 65%;
@@ -154,13 +155,17 @@ input:focus::placeholder {
 
 /* font & button styling */
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "MyCustomFont2", sans-serif;
   text-align: center;
   margin-top: 95px;
   text-transform: uppercase;
   color: #f6f6f6;
   font-size: 2em;
   /* letter-spacing: 8px; */
+}
+@font-face {
+  font-family: 'MyCustomFont2';
+  src: url('../fonts/AlimamaFangYuanTiVF-Thin.ttf') format('opentype');
 }
 h1::after{
   content: ""; /* 必须设置 content 属性 */
@@ -182,7 +187,7 @@ h1::after{
 }
 
 .desc {
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 .account {
@@ -191,7 +196,7 @@ h1::after{
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "MyCustomFont2", sans-serif;
   font-size: 0.7em;
   letter-spacing: 2px;
   color: #8E9AAF;
@@ -206,7 +211,7 @@ span {
 .logo {
   position: absolute;
   width: 155px;
-  height: 148px;
+  height: 144px;
   top: 35%;
   left: 26%;
   opacity: 0.9;
@@ -214,7 +219,7 @@ span {
 
 .smaller {
   width: 148px;
-  height: 148px;
+  height: 144px;
   top: 37%;
   left: 29%;
   opacity: 0.9;
@@ -223,7 +228,7 @@ span {
 button {
   padding: 12px;
   width: 40%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "MyCustomFont2", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 20px;
@@ -276,7 +281,7 @@ form {
 
 
 label {
-  font-family: "Open Sans", sans-serif;
+  font-family: "MyCustomFont2", sans-serif;
   color: #f7f7f7;
   font-size: 12px;
   padding: 0px 0px 0px 12px !important;
@@ -288,13 +293,13 @@ label {
   white-space: nowrap;
   position: relative;
   left: -62px;
-  top: 5px;
 }
 
 input[type=checkbox] {
-  width: 35px;
+  margin: 6px 7px 7px -20px;
+  width: 36px;
   cursor: pointer;
-  background: #ce7d88;
+  background: #2411b4;
 }
 
 .checkbox input[type=checkbox]:checked + label {
