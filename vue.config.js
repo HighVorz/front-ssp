@@ -3,9 +3,9 @@ module.exports = {
     devServer: {
         // 自动打开浏览器
         // open: true,
-        host: '127.0.0.1',
+        host: 'localhost',
         // 端口
-        // port: 8080,
+        port: 80,
         disableHostCheck: true,
         // proxy: {
         //     '/api': {

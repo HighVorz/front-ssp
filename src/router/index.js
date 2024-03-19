@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 // import Home from "@/components/Home";
 import Flow from "@/components/Flow";
 
@@ -15,6 +16,8 @@ import LicenseSearchView from '@/views/LicenseSearchView'
 import daiding from '@/views/daiding';
 Vue.use(VueRouter)
 
+
+// lazy load
 const routes = [{
     path: "/",
     redirect: "/navigator"
