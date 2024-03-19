@@ -2,7 +2,7 @@
 .backgd {
   width: 100%;
   height: 100%;
-  background: url('../video/loginregister_press.gif');
+  /* background: url('../video/loginregister.gif'); */
   background-size: cover;
 }
 
@@ -12,6 +12,26 @@
   width: 650px;
   height: 550px;
   position: relative;
+}
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/SanJiFengJianTi.ttf') format('truetype');
+}
+
+.title_line > p {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  font-size: 60px;
+  top: 6%;
+  background: linear-gradient(to right, white, rgb(96, 180, 213));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  font-family: 'MyCustomFont', sans-serif;
+  text-align: center;
+  z-index: 1;
 }
 @font-face {
   font-family: 'MyCustomFont';
@@ -75,6 +95,7 @@
   transform: translateX(0%);
   z-index: 2;
   animation: gradient 5s infinite 0s; 
+  animation: gradient 5s infinite 0s; 
 }
 
 .form-signup {
@@ -83,6 +104,7 @@
   left: 5%;
   width: 320px;
   height: 500px;
+  border-radius: 10px;
   border-radius: 10px;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-in-out;
