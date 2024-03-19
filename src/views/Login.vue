@@ -1,19 +1,24 @@
+<!-- 基本已经完成，可能要改一些字体 -->
 <template>
+    <div class="backgd">
     <div class="container">
+        <div class="title_line">
+            <p>超员检测系统</p>
+        </div>
         <div class="welcome">
             <div :class="form">
                 <div :class="form_signup">
-                    <h1>注册</h1>
+                    <h1><i class="fas fa-user-circle"></i> 注 册</h1>
                     <form autocomplete="off">
                         <input type="text" placeholder="用户名">
-                        <input type="email" placeholder="email">
+                        <input type="email" placeholder="电子邮箱">
                         <input type="password" placeholder="密码">
                         <input type="password" placeholder="确认密码">
                         <button class="button submit">创建账号 </button>
                     </form>
                 </div>
                 <div :class="form_signin">
-                    <h1>登录</h1>
+                    <h1><i class="fas fa-sign-in-alt"></i> 登 录</h1>
                     <form class="more-padding" autocomplete="off">
                         <input type="text" placeholder="用户名">
                         <input type="password" placeholder="密码">
@@ -25,20 +30,21 @@
                 </div>
             </div>
             <div class="leftbox">
-                <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                <p class="desc">选择你最喜欢的<span>鲜花</span></p>
-                <img class="flower smaller" src="1.jpg" alt="1357d638624297b" border="0">
+                <h2 class="title"><span>ELECTRONIC</span>&<br>POLICE</h2>
+                <p class="desc">欢迎注册成为<span>管理员</span></p>
+                <img class="logo" src="../assets/images/login.png" alt="logo" border="0">
                 <p class="account">已经有账号了?</p>
                 <button class="button" id="signin" @click="btn_signin">登录</button>
             </div>
             <div class="rightbox">
-                <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
-                <p class="desc">选择你最喜欢的<span>鲜花</span></p>
-                <img class="flower" src="2.jpg" />
+                <h2 class="title"><span>OVERCROWD</span>&<br>DETECT</h2>
+                <p class="desc">欢迎来到<span>超员检测系统</span></p>
+                <img class="logo smaller" src="../assets/images/moniter.png" />
                 <p class="account">还没有账号?</p>
                 <button class="button" id="signup" @click="btn_signup">注册</button>
             </div>
         </div>
+    </div>
     </div>
 </template>
 
@@ -67,6 +73,5 @@ function btn_signup() {
 }
 </script>
 
-<style>
-@import '../assets/css/style.css';
+<style scoped src="../assets/css/style.css">
 </style>

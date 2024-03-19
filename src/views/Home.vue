@@ -8,32 +8,32 @@
                 <img class="jzxz2" src="../assets/images/jzxz2.png">
             </div>
         </div>
-        <div class="head_top"><span>通用大数据可视化展示模版</span></div>
+        <div class="head_top"><span>超员检测系统平台</span></div>
         <div class="visual">
             <div class="visual_left">
                 <div class="visual_box">
                     <div class="visual_title">
-                        <span>交通流量</span>
+                        <span>数据部分1</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
                     <!-- 🚀 -->
-                    <Chart_main1 class="visual_chart" >
+                    <Chart_main1 class="visual_chart">
 
                     </Chart_main1>
                 </div>
                 <div class="visual_box">
                     <div class="visual_title">
-                        <span>交通工具流量</span>
+                        <span>数据部分2</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
                     <!-- 🚀 -->
-                    <Chart_main2 class="visual_chart" >
+                    <Chart_main2 class="visual_chart">
 
                     </Chart_main2>
                 </div>
                 <div class="visual_box">
                     <div class="visual_title">
-                        <span>收费站车流量</span>
+                        <span>数据部分3</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
                     <div class="visual_chart sfzcll">
@@ -104,7 +104,7 @@
                 <div class="visual_conTop">
                     <div class="visual_conTop_box visual_conTop1">
                         <div>
-                            <h3>当前警情数(起)</h3>
+                            <h3>当前超车数(起)</h3>
                             <p>67</p>
                             <div class="conTop_smil">
                                 <a class="sz">日环比:<span>+3%</span><i class="fa fa-long-arrow-up"></i></a>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="visual_conTop_box visual_conTop1">
                         <div>
-                            <h3>当前警情数(起)</h3>
+                            <h3>当前超车数(起)</h3>
                             <p>99</p>
                             <div class="conTop_smil">
                                 <a class="sz">日环比:<span>+3%</span><i class="fa fa-long-arrow-up"></i></a>
@@ -150,30 +150,38 @@
                     <img class="visual_conBot_3" src="../assets/images/ksh44.png">
                     <img class="visual_conBot_4" src="../assets/images/ksh45.png">
                     <div class="visual_chart_text">
-                        <h1>出行服务+大数据</h1>
-                        <h2>山西省交通大数据分析平台</h2>
+                        <h1>超员检测</h1>
+                        <h2>上海市地区详情</h2>
                     </div>
                     <!-- 🚀 -->
-                    <Chart_main8 class="visual_chart" ></Chart_main8>
+                    <Chart_main8 class="visual_chart"></Chart_main8>
                     <div class="visual_conBot_bot">
                         <div class="visualSssf_left">
                             <h3>今日实时收费</h3>
-                            <a style="display:block">全省数据</a>
-                            <a>大同北</a>
-                            <a>大同南</a>
-                            <a>朔州</a>
-                            <a>吕梁北</a>
-                            <a>吕梁南</a>
-                            <a>太原</a>
-                            <a class="active">晋中</a>
-                            <a>太旧</a>
-                            <a>长治</a>
+                            <a style="display:block;width: 20%;">全市数据</a>
+                            <a>黄埔区</a>
+                            <a>徐汇区</a>
+                            <a>长宁区</a>
+                            <a>静安区</a>
+                            <a>普陀区</a>
+                            <a>虹口区</a>
+                            <a class="active">杨浦区</a>
+                            <a>闵行区</a>
+                            <a>宝山区</a>
+                            <a>嘉定区</a>
+                            <a>金山区</a>
+                            <a>松江区</a>
+                            <a>青浦区</a>
+                            <a>奉贤区</a>
+                            <a>崇明区</a>
+                            <a>奉贤区</a>
+                            <a style="width: 20%;">浦东新区</a>
                         </div>
                         <div class="visualSssf_right">
                             <!-- 🚀 -->
-                            <Chart_main5 class="visualSssf_right_box" ></Chart_main5>
-                            <Chart_main6 class="visualSssf_right_box" ></Chart_main6>
-                            <Chart_main7 class="visualSssf_right_box" ></Chart_main7>
+                            <Chart_main5 class="visualSssf_right_box"></Chart_main5>
+                            <Chart_main6 class="visualSssf_right_box"></Chart_main6>
+                            <Chart_main7 class="visualSssf_right_box"></Chart_main7>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -182,66 +190,40 @@
             <div class="visual_right">
                 <div class="visual_box">
                     <div class="visual_title">
-                        <span>本月发生事件</span>
+                        <span>视频源1</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
                     <div class="swiper-container visual_swiper1 visual_chart">
                         <div class="swiper-wrapper">
                             <!-- 🚀 -->
-                            <Chart_main3 class="swiper-slide" ></Chart_main3>
-                            <Chart_main31 class="swiper-slide" ></Chart_main31>
+                            <Chart_main3 class="swiper-slide"></Chart_main3>
+                            <Chart_main31 class="swiper-slide"></Chart_main31>
                         </div>
                     </div>
                 </div>
                 <div class="visual_box visualSfzsfl">
                     <div class="visual_title">
-                        <span>收费站收费量</span>
+                        <span>视频源2</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
-                    <!-- 🚀 -->
-                    <Chart_main9 class="visual_chart" >
+                    <!-- 🚀 这个不需要-->
+                    <!-- <Chart_main9 class="visual_chart" >
 
-                    </Chart_main9>
-                    <div class="visual_table">
-                        <table>
-                            <tr>
-                                <td>小型车</td>
-                                <td>中型车</td>
-                                <td>大型车</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                            <tr>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                                <td>2486万</td>
-                            </tr>
-                        </table>
+                    </Chart_main9> -->
+                    <div class="visual_moniter2">
+                        <!-- 用来放第一个监控画面 -->
                     </div>
                 </div>
                 <div class="visual_box">
                     <div class="visual_title">
-                        <span>收费站收费排行</span>
+                        <span>超车严重情况</span>
                         <img src="../assets/images/ksh33.png">
                     </div>
                     <div class="swiper-container visual_swiper2 visual_chart">
                         <div class="swiper-wrapper">
                             <!-- 🚀 -->
-                            <Chart_main4 class="swiper-slide" ></Chart_main4>
-                            <Chart_main41 class="swiper-slide" ></Chart_main41>
+                            <Chart_main4 class="swiper-slide"></Chart_main4>
+                            <Chart_main41 class="swiper-slide"></Chart_main41>
                         </div>
                     </div>
                 </div>
@@ -252,14 +234,21 @@
     </body>
 </template>
 
+<!-- <script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/echarts.min.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+<script src="../assets/js/visual.js"></script>
+<script src="../assets/js/shanghai.js"></script>
+<script src="../assets/js/chartMap.js"></script> -->
 <script setup>
-// import '../assets/js/jquery.min.js'
+import '../assets/js/jquery.min.js'
 // import '../assets/js/bootstrap.min.js'
-// import '../assets/js/china.js'
-// import '../assets/js/swiper.min.js'
-// import '../assets/js/visual.js'
-// import '../assets/js/echarts.min.js'
+import '../assets/js/shanghai.js'
+import '../assets/js/swiper.min.js'
+import '../assets/js/echarts.min.js'
 // import '../assets/js/chartMap.js'
+// import '../assets/js/visual.js'
 
 // import * as echarts from 'echarts';
 
@@ -272,7 +261,7 @@ import Chart_main5 from '../components/charts/main5.vue';
 import Chart_main6 from '../components/charts/main6.vue';
 import Chart_main7 from '../components/charts/main7.vue';
 import Chart_main8 from '../components/charts/main8.vue';
-import Chart_main9 from '../components/charts/main9.vue';
+// import Chart_main9 from '../components/charts/main9.vue';
 import Chart_main31 from '../components/charts/main31.vue';
 import Chart_main41 from '../components/charts/main41.vue';
 
@@ -282,7 +271,7 @@ onMounted(() => {
     setTimeout(finishLoadAnimation, 1000); // 2秒后执行fetchSomething函数
 });
 
-function finishLoadAnimation(){
+function finishLoadAnimation() {
     isLoad.value = false;
 }
 
@@ -290,8 +279,12 @@ function finishLoadAnimation(){
 
 </script>
 
-<style moudle>
+<style src="../assets/bootstrap/3.3.4/css/bootstrap.css"></style>
+<style src="../assets/css/visual.css"></style>
+<style src="../assets/css/swiper.min.css"></style>
+
+<!-- <style moudle>
 @import '../assets/css/visual.css';
 @import '../assets/css/swiper.min.css';
 @import '../assets/bootstrap/3.3.4/css/bootstrap.css';
-</style>
+</style> -->

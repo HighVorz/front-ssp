@@ -1,3 +1,5 @@
+<!-- 目前没有用到这个页面 -->
+
 <template>
     <div class="box" @click="changeState" ref="videobox">
     <!-- 展示12个视频直播源,使用了组件 -->
