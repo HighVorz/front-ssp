@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from "@/components/Home";
+// import Home from "@/components/Home";
 import Flow from "@/components/Flow";
 
 import PersonSearchView from '@/views/PersonSearchView'
@@ -35,7 +35,7 @@ const routes = [{
 {
     path: '/main',
     name: 'Home',
-    component: Home,
+    component: resolve => require(['@/components/Home'], resolve),
 
     children: [{
         path: '/',

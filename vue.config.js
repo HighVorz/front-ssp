@@ -3,7 +3,7 @@ module.exports = {
     devServer: {
         // 自动打开浏览器
         // open: true,
-        // host: 'localhost',
+        host: '127.0.0.1',
         // 端口
         // port: 8080,
         disableHostCheck: true,
