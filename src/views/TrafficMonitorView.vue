@@ -39,7 +39,7 @@
       <!-- 选择直播源 -->
       <div class="right-part1">
         <div class="row1">
-          <el-button type="primary" @click="changevideo(1)" ref="button1">车牌直播源1</el-button>
+          <el-button type="primary" @click="changevideo(1)" ref="button1">车牌直播源01</el-button>
           <el-button type="primary" @click="changevideo(2)">车牌直播源02</el-button>
           <el-button type="primary" @click="changevideo(7)">车载直播源07</el-button>
           <el-button type="primary" @click="changevideo(8)">车载直播源08</el-button>
@@ -59,14 +59,9 @@
       </div>
       <!-- el-table展示数据 -->
       <div class="right-part2">
-        <div class="title" style="height: 15%; display: flex; justify-content: center">
-          <img src="../assets/images/nav_3.png" style="
-              margin-right: 2%;
-              margin-top: 2.5%;
-              width: 50px;
-              height: 50px;
-            " />
-          <h2 style="color: #fff; font-size: calc(100vw * 30 / 1920)">
+        <div class="title">
+          <img src="../assets/images/nav_3.png" />
+          <h2>
             实时报警
           </h2>
         </div>
@@ -272,11 +267,16 @@ export default {
 .row1>.el-button--primary,
 .row2>.el-button--primary,
 .row3>.el-button--primary {
-  font-size: calc(100vw * 18 / 2260);
+  font-size: calc(100vw * 18 / 1980);
   height: 100%;
   font-weight: bold;
   text-align: center;
   padding: 5px 5px 5px 5px;
+}
+
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('../assets/fonts/AlimamaFangYuanTiVF-Thin.ttf') format('opentype');
 }
 
 .main-box {
@@ -286,19 +286,19 @@ export default {
 }
 
 .left-box {
-  width: 70%;
+  width: 60%;
   height: 100%;
 }
 
 .right-box {
-  width: 29%;
+  width: 39%;
   height: 100%;
   margin-left: 1%;
 }
 
 .left-top {
   width: 100%;
-  height: 64%;
+  height: 72%;
   /* background-color: rebeccapurple; */
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
@@ -317,7 +317,7 @@ export default {
 .left-bottom {
   margin-top: 1%;
   width: 100%;
-  height: 35%;
+  height: 27%;
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
@@ -334,9 +334,11 @@ export default {
 
 /* 呼吸效果阴影框 */
 @keyframes breathe {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 1vw #1f69b9b9 inset;
   }
+
   50% {
     box-shadow: 0 0 3vw #1f69b9b9 inset;
   }
@@ -344,7 +346,7 @@ export default {
 
 .right-part1 {
   width: 100%;
-  height: 35%;
+  height: 45%;
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
@@ -361,7 +363,7 @@ export default {
 
 .right-part2 {
   width: 100%;
-  height: 65%;
+  height: 55%;
   margin-top: 1%;
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
@@ -377,6 +379,46 @@ export default {
   background-size: 0.1vw 1.5vw, 1.5vw 0.1vw;
 }
 
+.title {
+  height: 23%;
+  display: flex;
+  justify-content: center;
+}
+
+.title>img {
+  margin-right: 2%;
+  margin-top: 2.5%;
+  width: 50px;
+  height: 50px;
+}
+
+.title>h2 {
+  font-family: "HeaderFont", sans-serif;
+  font-weight: 600;
+  /* color: #ff0000; */
+  animation: alertEffect 2s infinite;
+  /* font-size: calc(100vw * 30 / 1600); */
+  margin-top: 5%;
+}
+
+@keyframes alertEffect {
+  0% {
+    font-size: calc(100vw * 30 / 1600);
+    color: #ff0000;
+  }
+
+  50% {
+    font-size: calc(100vw * 31 / 1600);
+    color: #ffff00;
+    margin-top: 4.5%;
+  }
+
+  100% {
+    font-size: calc(100vw * 30 / 1600);
+    color: #ff0000;
+  }
+}
+
 video {
   width: 98%;
   height: 96%;
@@ -386,6 +428,7 @@ video {
 
 .my-table {
   height: 90%;
+  overflow: hidden;
 }
 
 .el-table {
