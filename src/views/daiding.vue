@@ -3,7 +3,7 @@
     <diV class="left">
       <h1><i class="fas fa-tachometer-alt"></i> 超载检测</h1>
       <div class="search_bar">
-        <el-input v-model="input" placeholder="请输入内容" @keyup.enter.native="Search"style="
+        <el-input v-model="input" placeholder="请输入内容" @keyup.enter.native="Search" style="
             display: inline-block;
             margin:0px 0px 0px 0px;
             width: 88%;"></el-input>
@@ -55,6 +55,12 @@
         <el-pagination class="msg-pagination-container" background :current-page="1" :page-size="10"
           layout="pager,total" :total="count" style="text-align: center; margin-top: 10px; color: aliceblue">
         </el-pagination>
+
+        <el-upload class="upload-demo" action="https://jsonplaceholder.typicode.com/posts/" :on-preview="handlePreview"
+            :on-remove="handleRemove" :file-list="fileList" list-type="picture">
+          <el-button size="small" type="primary">点击上传</el-button>
+        </el-upload>
+        <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
       </div>
     </diV>
   </div>
@@ -227,6 +233,7 @@ export default {
 </script>
 
 <style scoped>
+
 .search_bar {
   width: 80%;
   margin: 0 auto;
