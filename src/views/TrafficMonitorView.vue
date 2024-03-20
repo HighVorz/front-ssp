@@ -39,28 +39,28 @@
       <!-- 选择直播源 -->
       <div class="right-part1">
         <div class="row1">
-          <el-button type="primary" @click="changevideo(1)" ref="button1">车牌直播源01</el-button>
-          <el-button type="primary" @click="changevideo(2)">车牌直播源02</el-button>
-          <el-button type="primary" @click="changevideo(7)">车载直播源07</el-button>
-          <el-button type="primary" @click="changevideo(8)">车载直播源08</el-button>
+          <el-button type="primary" @click="changevideo(1)" ref="button1"><span>车牌直播源 01</span></el-button>
+          <el-button type="primary" @click="changevideo(2)"><span>车牌直播源 02</span></el-button>
+          <el-button type="primary" @click="changevideo(7)"><span>车载直播源 07</span></el-button>
+          <el-button type="primary" @click="changevideo(8)"><span>车载直播源 08</span></el-button>
         </div>
         <div class="row2">
-          <el-button type="primary" @click="changevideo(3)">车牌直播源03</el-button>
-          <el-button type="primary" @click="changevideo(4)">车牌直播源04</el-button>
-          <el-button type="primary" @click="changevideo(9)">车载直播源09</el-button>
-          <el-button type="primary" @click="changevideo(10)">车载直播源10</el-button>
+          <el-button type="primary" @click="changevideo(3)"><span>车牌直播源 03</span></el-button>
+          <el-button type="primary" @click="changevideo(4)"><span>车牌直播源 04</span></el-button>
+          <el-button type="primary" @click="changevideo(9)"><span>车载直播源 09</span></el-button>
+          <el-button type="primary" @click="changevideo(10)"><span>车载直播源 10</span></el-button>
         </div>
         <div class="row3">
-          <el-button type="primary" @click="changevideo(5)">车牌直播源05</el-button>
-          <el-button type="primary" @click="changevideo(6)">车牌直播源06</el-button>
-          <el-button type="primary" @click="changevideo(11)">车载直播源11</el-button>
-          <el-button type="primary" @click="changevideo(12)">车载直播源12</el-button>
+          <el-button type="primary" @click="changevideo(5)"><span>车牌直播源 05</span></el-button>
+          <el-button type="primary" @click="changevideo(6)"><span>车牌直播源 06</span></el-button>
+          <el-button type="primary" @click="changevideo(11)"><span>车载直播源 11</span></el-button>
+          <el-button type="primary" @click="changevideo(12)"><span>车载直播源 12</span></el-button>
         </div>
       </div>
       <!-- el-table展示数据 -->
       <div class="right-part2">
         <div class="title">
-          <img src="../assets/images/nav_3.png" />
+          <img src="../assets/images/baojing.png" />
           <h2>
             实时报警
           </h2>
@@ -274,6 +274,12 @@ export default {
   padding: 5px 5px 5px 5px;
 }
 
+.row1> .el-button--primary> span >span,
+.row2> .el-button--primary> span >span,
+.row3> .el-button--primary> span >span {
+  font-family: "HeaderFont", sans-serif;
+}
+
 @font-face {
   font-family: 'HeaderFont';
   src: url('../assets/fonts/AlimamaFangYuanTiVF-Thin.ttf') format('opentype');
@@ -334,6 +340,7 @@ export default {
 
 /* 呼吸效果阴影框 */
 @keyframes breathe {
+
   0%,
   100% {
     box-shadow: 0 0 1vw #1f69b9b9 inset;
@@ -395,35 +402,30 @@ export default {
 .title>h2 {
   font-family: "HeaderFont", sans-serif;
   font-weight: 600;
-  /* color: #ff0000; */
   animation: alertEffect 2s infinite;
-  /* font-size: calc(100vw * 30 / 1600); */
+  font-size: calc(100vw * 30 / 1600);
   margin-top: 5%;
 }
 
 @keyframes alertEffect {
   0% {
-    font-size: calc(100vw * 30 / 1600);
     color: #ff0000;
   }
 
   50% {
-    font-size: calc(100vw * 31 / 1600);
     color: #ffff00;
-    margin-top: 4.5%;
   }
 
   100% {
-    font-size: calc(100vw * 30 / 1600);
     color: #ff0000;
   }
 }
 
 video {
-  width: 98%;
-  height: 96%;
+  width: 96%;
+  height: 92%;
   object-fit: fill;
-  margin: 1% 1%;
+  margin: 2% 2%;
 }
 
 .my-table {
@@ -434,6 +436,10 @@ video {
 .el-table {
   color: #fff;
   font-size: calc(100vw * 18 / 1920);
+}
+
+.my-table>>>.cell {
+  font-family: "HeaderFont", sans-serif;
 }
 
 .my-table>>>.el-table thead {

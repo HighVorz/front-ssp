@@ -18,7 +18,7 @@
                     </form>
                 </div>
                 <div :class="form_signin">
-                    <h1><i class="fas fa-sign-in-alt"></i> 登 录</h1>
+                    <h1><i src=""></i> 登 录</h1>
                     <form class="more-padding" autocomplete="off">
                         <input type="text" placeholder="用户名">
                         <input type="password" placeholder="密码">

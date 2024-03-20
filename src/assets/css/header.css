@@ -65,6 +65,7 @@
     height: 20px;
     display: inline-block;
     position: relative;
+    top: 5px;
     margin-right: 5px;
 }
 
@@ -95,37 +96,37 @@
 }
 
 .nav_1 {
-    background-image: url("../images/header_icon/首页.png");
+    background-image: url("../images/header_icon/nav_1.png");
     width: 25px;
     height: 25px;
 }
 
 .nav_2 {
-    background-image: url("../images/header_icon/视频监控.png");
+    background-image: url("../images/header_icon/nav_2.png");
     width: 25px;
     height: 25px;
 }
 
 .nav_3 {
-    background-image: url("../images/header_icon/人物检测.png");
+    background-image: url("../images/header_icon/nav_3.png");
     width: 25px;
     height: 25px;
 }
 
 .nav_4 {
-    background-image: url("../images/header_icon/超载检测.png");
+    background-image: url("../images/header_icon/nav_4.png");
     width: 25px;
     height: 25px;
 }
 
 .nav_5 {
-    background-image: url("../images/header_icon/信息查询.png");
+    background-image: url("../images/header_icon/nav_5.png");
     width: 25px;
     height: 25px;
 }
 
 .nav_6 {
-    background-image: url("../images/header_icon/退出.png");
+    background-image: url("../images/header_icon/nav_6.png");
     width: 25px;
     height: 25px;
 }

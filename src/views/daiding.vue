@@ -1,20 +1,13 @@
 <template>
   <div class="container">
-    <diV class="left">
+    <div class="left">
       <h1><i class="fas fa-tachometer-alt"></i> 超载检测</h1>
       <div class="search_bar">
         <el-input v-model="input" placeholder="请输入内容" @keyup.enter.native="Search" style="
             display: inline-block;
             margin:0px 0px 0px 0px;
             width: 88%;"></el-input>
-        <el-button type="primary" icon="el-icon-search" style="margin-left: 2%;
-          display: inline-block;
-          width: 10%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          font-family: '微软雅黑';
-          font-weight: bold" @click="Search">搜索
+        <el-button type="primary" icon="el-icon-search" @click="Search">搜索
         </el-button>
       </div>
       <div style="width: 100%" class="my-table">
@@ -57,12 +50,12 @@
         </el-pagination>
 
         <el-upload class="upload-demo" action="https://jsonplaceholder.typicode.com/posts/" :on-preview="handlePreview"
-            :on-remove="handleRemove" :file-list="fileList" list-type="picture">
+          :on-remove="handleRemove" :file-list="fileList" list-type="picture">
           <el-button size="small" type="primary">点击上传</el-button>
         </el-upload>
         <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
       </div>
-    </diV>
+    </div>
   </div>
 </template>
 
@@ -233,6 +226,12 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  text-align: center;
+  font-family: "HeaderFont", sans-serif;
+  font-size: 30px;
+  color: #FF7F00;
+}
 
 .search_bar {
   width: 80%;
@@ -241,6 +240,26 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+.search_bar>.el-button--primary {
+  margin-left: 2%;
+  display: inline-block;
+  width: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold
+}
+
+.el-button--primary>>>span {
+  font-size: 16px;
+  font-family: 'HeaderFont', sans-serif;
+}
+
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('../assets/fonts/AlimamaFangYuanTiVF-Thin.ttf') format('opentype');
 }
 
 .el-pagination.is-background .el-pager li:not(.disabled) {
@@ -289,7 +308,8 @@ export default {
   width: 100%;
   height: 100%;
   float: left;
-  box-shadow: 0 0 1.5vw #1f69b9b9 inset;
+  animation: breathe 2s infinite;
+  /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) left top,
     linear-gradient(#33cdfa, #33cdfa) right top,
@@ -303,11 +323,26 @@ export default {
   /* background-color: green; */
 }
 
-.left h1 {
-  text-align: center;
-  color: #FF7F00;
-  font-size: large;
-  font-family: "微软雅黑" format('truetype');
+/* 呼吸效果阴影框 */
+@keyframes breathe {
+
+  0%,
+  100% {
+    box-shadow: 0 0 1vw #1f69b9b9 inset;
+  }
+
+  50% {
+    box-shadow: 0 0 3vw #1f69b9b9 inset;
+  }
+}
+
+.el-table__header-wrapper {
+  overflow: hidden;
+}
+
+.my-table>>> div,
+.my-table>>> span {
+  font-family: "HeaderFont",sans-serif;
 }
 
 .my-table>>>.el-table__row>td {
