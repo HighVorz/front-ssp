@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="left">
-      <h1><i class="fas fa-tachometer-alt"></i> 超载检测</h1>
+      <h1><img src="../assets/images/detect.svg"/> 超载检测</h1>
       <div class="search_bar">
         <el-input v-model="input" placeholder="请输入内容" @keyup.enter.native="Search" style="
             display: inline-block;
