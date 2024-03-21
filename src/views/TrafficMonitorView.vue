@@ -39,34 +39,29 @@
       <!-- 选择直播源 -->
       <div class="right-part1">
         <div class="row1">
-          <el-button type="primary" @click="changevideo(1)" ref="button1">车牌直播源1</el-button>
-          <el-button type="primary" @click="changevideo(2)">车牌直播源02</el-button>
-          <el-button type="primary" @click="changevideo(7)">车载直播源07</el-button>
-          <el-button type="primary" @click="changevideo(8)">车载直播源08</el-button>
+          <el-button type="primary" @click="changevideo(1)" ref="button1"><span>车牌直播源 01</span></el-button>
+          <el-button type="primary" @click="changevideo(2)"><span>车牌直播源 02</span></el-button>
+          <el-button type="primary" @click="changevideo(7)"><span>车载直播源 07</span></el-button>
+          <el-button type="primary" @click="changevideo(8)"><span>车载直播源 08</span></el-button>
         </div>
         <div class="row2">
-          <el-button type="primary" @click="changevideo(3)">车牌直播源03</el-button>
-          <el-button type="primary" @click="changevideo(4)">车牌直播源04</el-button>
-          <el-button type="primary" @click="changevideo(9)">车载直播源09</el-button>
-          <el-button type="primary" @click="changevideo(10)">车载直播源10</el-button>
+          <el-button type="primary" @click="changevideo(3)"><span>车牌直播源 03</span></el-button>
+          <el-button type="primary" @click="changevideo(4)"><span>车牌直播源 04</span></el-button>
+          <el-button type="primary" @click="changevideo(9)"><span>车载直播源 09</span></el-button>
+          <el-button type="primary" @click="changevideo(10)"><span>车载直播源 10</span></el-button>
         </div>
         <div class="row3">
-          <el-button type="primary" @click="changevideo(5)">车牌直播源05</el-button>
-          <el-button type="primary" @click="changevideo(6)">车牌直播源06</el-button>
-          <el-button type="primary" @click="changevideo(11)">车载直播源11</el-button>
-          <el-button type="primary" @click="changevideo(12)">车载直播源12</el-button>
+          <el-button type="primary" @click="changevideo(5)"><span>车牌直播源 05</span></el-button>
+          <el-button type="primary" @click="changevideo(6)"><span>车牌直播源 06</span></el-button>
+          <el-button type="primary" @click="changevideo(11)"><span>车载直播源 11</span></el-button>
+          <el-button type="primary" @click="changevideo(12)"><span>车载直播源 12</span></el-button>
         </div>
       </div>
       <!-- el-table展示数据 -->
       <div class="right-part2">
-        <div class="title" style="height: 15%; display: flex; justify-content: center">
-          <img src="../assets/images/nav_3.png" style="
-              margin-right: 2%;
-              margin-top: 2.5%;
-              width: 50px;
-              height: 50px;
-            " />
-          <h2 style="color: #fff; font-size: calc(100vw * 30 / 1920)">
+        <div class="title">
+          <img src="../assets/images/baojing.png" />
+          <h2>
             实时报警
           </h2>
         </div>
@@ -272,11 +267,22 @@ export default {
 .row1>.el-button--primary,
 .row2>.el-button--primary,
 .row3>.el-button--primary {
-  font-size: calc(100vw * 18 / 2260);
+  font-size: calc(100vw * 18 / 1980);
   height: 100%;
   font-weight: bold;
   text-align: center;
   padding: 5px 5px 5px 5px;
+}
+
+.row1> .el-button--primary> span >span,
+.row2> .el-button--primary> span >span,
+.row3> .el-button--primary> span >span {
+  font-family: "HeaderFont", sans-serif;
+}
+
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('../assets/fonts/AlimamaFangYuanTiVF-Thin.ttf') format('opentype');
 }
 
 .main-box {
@@ -286,19 +292,19 @@ export default {
 }
 
 .left-box {
-  width: 70%;
+  width: 60%;
   height: 100%;
 }
 
 .right-box {
-  width: 29%;
+  width: 39%;
   height: 100%;
   margin-left: 1%;
 }
 
 .left-top {
   width: 100%;
-  height: 64%;
+  height: 72%;
   /* background-color: rebeccapurple; */
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
@@ -317,7 +323,7 @@ export default {
 .left-bottom {
   margin-top: 1%;
   width: 100%;
-  height: 35%;
+  height: 27%;
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
@@ -334,9 +340,12 @@ export default {
 
 /* 呼吸效果阴影框 */
 @keyframes breathe {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 1vw #1f69b9b9 inset;
   }
+
   50% {
     box-shadow: 0 0 3vw #1f69b9b9 inset;
   }
@@ -344,7 +353,7 @@ export default {
 
 .right-part1 {
   width: 100%;
-  height: 35%;
+  height: 45%;
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
@@ -361,7 +370,7 @@ export default {
 
 .right-part2 {
   width: 100%;
-  height: 65%;
+  height: 55%;
   margin-top: 1%;
   animation: breathe 2s infinite;
   /* box-shadow: 0 0 1.5vw #1f69b9b9 inset; */
@@ -377,20 +386,60 @@ export default {
   background-size: 0.1vw 1.5vw, 1.5vw 0.1vw;
 }
 
+.title {
+  height: 23%;
+  display: flex;
+  justify-content: center;
+}
+
+.title>img {
+  margin-right: 2%;
+  margin-top: 2.5%;
+  width: 50px;
+  height: 50px;
+}
+
+.title>h2 {
+  font-family: "HeaderFont", sans-serif;
+  font-weight: 600;
+  animation: alertEffect 2s infinite;
+  font-size: calc(100vw * 30 / 1600);
+  margin-top: 5%;
+}
+
+@keyframes alertEffect {
+  0% {
+    color: #ff0000;
+  }
+
+  50% {
+    color: #ffff00;
+  }
+
+  100% {
+    color: #ff0000;
+  }
+}
+
 video {
-  width: 98%;
-  height: 96%;
+  width: 96%;
+  height: 92%;
   object-fit: fill;
-  margin: 1% 1%;
+  margin: 2% 2%;
 }
 
 .my-table {
   height: 90%;
+  overflow: hidden;
 }
 
 .el-table {
   color: #fff;
   font-size: calc(100vw * 18 / 1920);
+}
+
+.my-table>>>.cell {
+  font-family: "HeaderFont", sans-serif;
 }
 
 .my-table>>>.el-table thead {

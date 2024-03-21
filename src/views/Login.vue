@@ -8,7 +8,7 @@
         <div class="welcome">
             <div :class="form">
                 <div :class="form_signup">
-                    <h1><i class="fas fa-user-circle"></i> 注 册</h1>
+                    <h1><img src="../assets/images/login/reg.svg" alt="Icon"/> 注 册</h1>
                     <form autocomplete="off">
                         <input type="text" placeholder="用户名">
                         <input type="email" placeholder="电子邮箱">
@@ -18,7 +18,7 @@
                     </form>
                 </div>
                 <div :class="form_signin">
-                    <h1><i class="fas fa-sign-in-alt"></i> 登 录</h1>
+                    <h1><img src="../assets/images/login/login.svg" alt="Icon"/> 登 录</h1>
                     <form class="more-padding" autocomplete="off">
                         <input type="text" placeholder="用户名">
                         <input type="password" placeholder="密码">
