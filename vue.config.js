@@ -6,7 +6,7 @@ module.exports = {
         host: '127.0.0.1',
         // 端口
         // port: 8080,
-        disableHostCheck: true,
+        // disableHostCheck: true,
         // proxy: {
         //     '/api': {
         //         target: 'http://115.25.46.178/api',
