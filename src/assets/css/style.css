@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora");
+.backgd {
+  width: 100%;
+  height: 100%;
+  /* background: url('../video/loginregister.gif'); */
+  background-size: cover;
+}
+
+/* div box styling */
+.container {
+  margin: auto;
+  width: 650px;
+  height: 550px;
+  position: relative;
+}
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/SanJiFengJianTi.ttf') format('truetype');
+}
+
+.title_line > p {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  font-size: 60px;
+  top: 6%;
+  background: linear-gradient(to right, white, rgb(96, 180, 213));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  font-family: 'MyCustomFont', sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+.title_line > p {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  font-size: 60px;
+  top: 6%;
+  background: linear-gradient(to right, white, rgb(96, 180, 213));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  font-family: 'MyCustomFont', sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+.welcome {
+  background: #f6f6f6;
+  animation: gradient2 5s infinite 0s; 
+  width: 650px;
+  height: 415px;
+  position: absolute;
+  top: 30%;
+  opacity: 0.75;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s;
+}
+
+@keyframes gradient2 {
+  0% {
+    background: #f6f6f6; /* Blue */
+  }
+  50% {
+    background: #e8e8e8; /* Deep blue */
+  }
+  100% {
+    background: #f6f6f6; /* Blue */
+  }
+}
+
+.welcome:hover {
+  opacity: 1;
+}
+
+.form-signin {
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  width: 320px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0%);
+  z-index: 2;
+  animation: gradient 5s infinite 0s; 
+  animation: gradient 5s infinite 0s; 
+}
+
+.form-signup {
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  width: 320px;
+  height: 500px;
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(80%);
+  z-index: 2;
+  animation: gradient 5s infinite 0s; 
+}
+
+
+input {
+  font-family: "MyCustomFont2", sans-serif;
+  background: #208bbd;
+  background: transparent;
+  width: 65%;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid rgba(246, 246, 246, 0.5);
+  padding: 9px;
+  margin: 7px;
+}
+
+input::placeholder {
+  color: #f6f6f6;
+  opacity: 1;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+input:focus {
+  color: #000000;
+  outline: none;
+  border-bottom: 1.2px solid rgb(34, 19, 164);
+  font-size: 1.2em;
+  transition: 0.5s all ease;
+}
+input:focus::placeholder {
+  opacity: 0.5;
+}
+
+@keyframes gradient {
+  0% {
+    background: #208bbd; /* Blue */
+  }
+  50% {
+    background: #389fff; /* Deep blue */
+  }
+  100% {
+    background: #208bbd; /* Blue */
+  }
+}
+
+.nodisplay {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.leftbox, .rightbox {
+  position: absolute;
+  width: 50%;
+  transition: 1s all ease;
+}
+
+.leftbox {
+  left: -2%;
+}
+
+.rightbox {
+  right: -2%;
+}
+
+/* font & button styling */
+h1 {
+  font-family: "MyCustomFont2", sans-serif;
+  text-align: center;
+  margin-top: 95px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  font-size: 2em;
+  /* letter-spacing: 8px; */
+}
+@font-face {
+  font-family: 'MyCustomFont2';
+  src: url('../fonts/AlimamaFangYuanTiVF-Thin.ttf') format('opentype');
+}
+h1::after{
+  content: ""; /* 必须设置 content 属性 */
+  display: block; /* 让伪元素成为块级元素 */
+  width: 33%; /* 设置下划线的宽度 */
+  height: 5px; /* 设置下划线的高度 */
+  background: #40c874; /* 设置下划线的颜色 */
+  margin: 5px auto;
+}
+.title {
+  font-family: "Lora", serif;
+  color: #8E9AAF;
+  font-size: 1.8em;
+  line-height: 1.1em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20%;
+}
+
+.desc {
+  margin-top: -4px;
+}
+
+.account {
+  margin-top: 45%;
+  font-size: 10px;
+}
+
+p {
+  font-family: "MyCustomFont2", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  color: #8E9AAF;
+  text-align: center;
+}
+
+span {
+  color: #208bbd;
+  font-weight: bold;
+}
+
+.logo {
+  position: absolute;
+  width: 155px;
+  height: 144px;
+  top: 35%;
+  left: 26%;
+  opacity: 0.9;
+}
+
+.smaller {
+  width: 148px;
+  height: 144px;
+  top: 37%;
+  left: 29%;
+  opacity: 0.9;
+}
+
+button {
+  padding: 12px;
+  width: 40%;
+  font-family: "MyCustomFont2", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: auto;
+  outline: none;
+  display: block;
+}
+button:hover {
+  background: #208bbd;
+  color: #f6f6f6;
+  transition: background-color 0.5s ease-out;
+}
+
+.button {
+  margin-top: 5%;
+  background: #f6f6f6;
+  color: #2ea8e0;
+  border: solid 1px #208bbd;
+}
+
+/* form styling */
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7px;
+}
+
+.more-padding {
+  padding-top: 35px;
+}
+.more-padding input {
+  padding: 12px;
+}
+.more-padding .submit {
+  margin-top: 45px;
+}
+
+.submit {
+  margin-top: 25px;
+  padding: 12px;
+  border-color: #208bbd;
+}
+.submit:hover {
+  background: #40c874;
+  border-color: #208bbd;
+}
+
+
+
+label {
+  font-family: "MyCustomFont2", sans-serif;
+  color: #f7f7f7;
+  font-size: 12px;
+  padding: 0px 0px 0px 12px !important;
+  letter-spacing: 1px;
+}
+
+.checkbox {
+  display: inline;
+  white-space: nowrap;
+  position: relative;
+  left: -62px;
+}
+
+input[type=checkbox] {
+  margin: 6px 7px 7px -20px;
+  width: 36px;
+  cursor: pointer;
+  background: #2411b4;
+}
+
+.checkbox input[type=checkbox]:checked + label {
+  color: skyblue;
+  transition: 0.5s all ease;
+}
