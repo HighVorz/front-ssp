@@ -159,25 +159,25 @@
                     </div>
                     <div class="visual_conBot_bot">  
                         <div class="visualSssf_left">
-                            <h3>今日实时收费</h3>
+                            <h3>超员数量统计</h3>
                             <a style="display:block;width: 20%;">全市数据</a>
-                            <a>黄埔区</a>
-                            <a>徐汇区</a>
-                            <a>长宁区</a>
-                            <a>静安区</a>
-                            <a>普陀区</a>
-                            <a>虹口区</a>
-                            <a class="active">杨浦区</a>
-                            <a>闵行区</a>
-                            <a>宝山区</a>
-                            <a>嘉定区</a>
-                            <a>金山区</a>
-                            <a>松江区</a>
-                            <a>青浦区</a>
-                            <a>奉贤区</a>
-                            <a>崇明区</a>
-                            <a>奉贤区</a>
-                            <a style="width: 20%;">浦东新区</a>
+                            <a @click="passParams('黄浦区')">黄浦区</a>
+                            <a @click="passParams('徐汇区')">徐汇区</a>
+                            <a @click="passParams('长宁区')">长宁区</a>
+                            <a @click="passParams('静安区')">静安区</a>
+                            <a @click="passParams('普陀区')">普陀区</a>
+                            <a @click="passParams('虹口区')">虹口区</a>
+                            <a @click="passParams('杨浦区')">杨浦区</a>
+                            <a @click="passParams('闵行区')">闵行区</a>
+                            <a @click="passParams('上海市宝山区')">宝山区</a>
+                            <a @click="passParams('嘉定区')">嘉定区</a>
+                            <a @click="passParams('金山区')">金山区</a>
+                            <a @click="passParams('松江区')">松江区</a>
+                            <a @click="passParams('青浦区')">青浦区</a>
+                            <a @click="passParams('奉贤区')">奉贤区</a>
+                            <a @click="passParams('崇明区')">崇明区</a>
+                            <a @click="passParams('奉贤区')">奉贤区</a>
+                            <a style="width: 20%;" @click="passParams('浦东新区')">浦东新区</a>
                         </div>
                         <div class="visualSssf_right">
                             <!-- 🚀 -->
@@ -265,7 +265,7 @@ import Chart_main8 from '../components/charts/main8.vue';
 // import Chart_main9 from '../components/charts/main9.vue';
 import Chart_main31 from '../components/charts/main31.vue';
 import Chart_main41 from '../components/charts/main41.vue';
-
+import store from '../vuex/store.js'
 const isLoad = ref(true);
 
 onMounted(() => {
@@ -277,7 +277,9 @@ function finishLoadAnimation() {
     isLoad.value = false;
 }
 
-
+function passParams(param) {
+    store.commit('incCount', param);
+}
 
 
 </script>

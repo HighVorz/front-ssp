@@ -15,8 +15,9 @@
 </template>
 <script setup>
 import { BaiduMap } from "vue-baidu-map";
-import { ref,reactive, } from 'vue'
+import { ref,reactive,watchEffect } from 'vue'
 import $ from "jquery";
+import store from '../../vuex/store.js'
 const center = reactive({ lng: 0, lat: 0 });
 const zoom = ref(0); //初始放大倍数
 const startName = ref()
@@ -247,6 +248,26 @@ function openDistanceTool(){
   loading.value=false
   searchByStationName1()
 }
+const step = ref()
+// 使用 watchEffect 监听异步操作的结果
+watchEffect(() => {
+        step.value = store.state.count
+         // 参数变化时执行搜索等操作
+        console.log("接受传参", store.state.count)
+        // 这里可以调用搜索函数等
+        // search(newValue);
+        // 使用百度地图的地理编码服务获取区域的经纬度范围
+        var myGeo = new BMap.Geocoder();
+            myGeo.getPoint(step.value, function(point) {
+                if (point) {
+                    // 根据返回的经纬度点设置地图的中心点和缩放级别
+                    Map.centerAndZoom(point, 15);
+                } else {
+                    alert("您输入的区名无法解析！");
+                }
+
+    })
+    })
 </script>
 
 

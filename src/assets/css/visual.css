@@ -122,9 +122,10 @@ html, body, form{overflow-y:auto;height:100%;}
 .visualSssf_left{width:55%;float:left;color:#fff;padding:10px 20px 0 20px;}
 .visualSssf_left h3{color:#fff;font-size:20px;font-weight:600;margin-bottom:10px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
 .visualSssf_left a{width:15%;color:#fff;display:inline-block;margin-bottom:10px;cursor:pointer;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
-.visualSssf_left a.active{color:#01f0ff;}
+.visualSssf_left a:active{color:#01f0ff;}
+.visualSssf_left a:hover{color:#01f0ff;}
 .visualSssf_right{width:45%;height:100%;float:left;}
-.visualSssf_right .visualSssf_right_box{width:33%;float:left;height:100%;}
+.visualSssf_right .visualSssf_right_box{width:32%;float:left;height:100%;}
 
 .visualSfzsfl{position:relative;}
 .visualSfzsfl .visual_chart{opacity:0.6}
