@@ -8,5 +8,11 @@
 </script>
 
 <style>
+.BMap_cpyCtrl {
+display: none;
+}
+.anchorBL {
+display: none;
+}
 
 </style>

@@ -4,6 +4,8 @@ import router from './router'
 import './plugins/element.js'
 import axios from 'axios';
 import echarts from 'echarts'
+import '@fortawesome/fontawesome-free/css/all.css'
+import BaiduMap from 'vue-baidu-map'
 
 Vue.config.productionTip = false
 
@@ -14,13 +16,16 @@ Vue.config.productionTip = false
 // document.oncontextmenu = function() {
 //     return false;
 // };
-
+Vue.use(BaiduMap, {
+    ak: 'I63Kb12LFglewQWaqA3M3EqierucDVjb' // 将 YOUR_API_KEY 替换为你的百度地图 API 密钥
+  });
 
 new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')
 
+Vue.
 
 // 设置 axios 的基本 URL
 axios.defaults.baseURL = 'http://127.0.0.1:8000'; // 这里将后端的基本 URL 设置为示例的值，实际上应该根据您的后端地址进行修改

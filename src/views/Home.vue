@@ -1,6 +1,5 @@
 <template>
-
-    <body class="ksh">
+    <div class="ksh">
         <div id="load" v-if="isLoad">
             <div class="load_img">
                 <!-- 加载动画 -->
@@ -18,7 +17,6 @@
                     </div>
                     <!-- 🚀 -->
                     <Chart_main1 class="visual_chart">
-
                     </Chart_main1>
                 </div>
                 <div class="visual_box">
@@ -150,12 +148,16 @@
                     <img class="visual_conBot_3" src="../assets/images/ksh44.png">
                     <img class="visual_conBot_4" src="../assets/images/ksh45.png">
                     <div class="visual_chart_text">
-                        <h1>超员检测</h1>
-                        <h2>上海市地区详情</h2>
+                        <!-- <h1>超员检测</h1>
+                        <h2>上海市地区详情</h2> -->
                     </div>
                     <!-- 🚀 -->
-                    <Chart_main8 class="visual_chart"></Chart_main8>
-                    <div class="visual_conBot_bot">
+                    <div class="baiduMap">
+                        <div id="container">
+                            <Chart_main8 ></Chart_main8>
+                        </div>        
+                    </div>
+                    <div class="visual_conBot_bot">  
                         <div class="visualSssf_left">
                             <h3>今日实时收费</h3>
                             <a style="display:block;width: 20%;">全市数据</a>
@@ -230,8 +232,7 @@
             </div>
             <div class="clear"></div>
         </div>
-
-    </body>
+    </div>
 </template>
 
 <!-- <script src="../assets/js/jquery.min.js"></script>
@@ -268,6 +269,7 @@ import Chart_main41 from '../components/charts/main41.vue';
 const isLoad = ref(true);
 
 onMounted(() => {
+    // 在组件挂载后加载外部资源
     setTimeout(finishLoadAnimation, 1000); // 2秒后执行fetchSomething函数
 });
 
@@ -277,14 +279,16 @@ function finishLoadAnimation() {
 
 
 
-</script>
 
+</script>
+<!--设置是否为缩放模式 -->
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 <style src="../assets/bootstrap/3.3.4/css/bootstrap.css"></style>
 <style src="../assets/css/visual.css"></style>
 <style src="../assets/css/swiper.min.css"></style>
 
-<!-- <style moudle>
-@import '../assets/css/visual.css';
+<style moudle>
+/* @import '../assets/css/visual.css';
 @import '../assets/css/swiper.min.css';
-@import '../assets/bootstrap/3.3.4/css/bootstrap.css';
-</style> -->
+@import '../assets/bootstrap/3.3.4/css/bootstrap.css'; */
+</style>
